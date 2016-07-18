@@ -91,25 +91,6 @@ textarea {
     padding: 0.2em 0;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -191,9 +172,7 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
+
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
@@ -280,3 +259,159 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+* { 
+    color: white;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+
+
+/* ==========================================================================
+   DESKTOP/TABLET
+   ========================================================================== */
+.logo {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 1em auto;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.title {
+    font-family: 'Big John';
+    color: white;
+    text-align: center;
+    font-size: 4em;
+}
+
+.background {
+    background-image: url('/exports/floral-2.png');
+    position: fixed;
+}
+
+.info {
+    font-family: 'Roboto Slab', sans-serif;
+    width: 10em;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    left: 45%;
+}
+
+.vid {
+    width: 100%;
+    height: 200px;
+    background-color: green;
+    /*float: right;*/
+    margin-right:5em;
+}
+
+.subheader {
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: bold;
+    color: white;
+    /*text-align: center;*/
+    text-transform: uppercase;
+
+}
+
+.secondary-header {
+    font-family: 'Big John';
+    text-transform: uppercase;
+    color: #da465e;
+    /*text-align: center;*/
+    font-size: 4em;
+
+}
+
+button {
+    color: #a06e1f;
+    border: 5px solid #da465e;
+    margin: 0 auto;
+    padding: 1em;
+    margin-bottom: 3em;
+    font-size: 1.1em;
+    text-align: center;
+    width: 325px;
+}
+/* ==========================================================================
+   PHONE
+   ========================================================================== */
+@media only screen and (min-width: 25em) {
+    /* Style adjustments for viewports that meet the condition */
+    * {
+        text-align: left;
+        background-color: black;
+    }
+
+    .title {
+        font-size: 35pt;
+        text-align: left;
+        letter-spacing: 3px;
+        width: 275px;
+        margin: 0 auto;
+    }
+    .title-2 {
+        font-size: 48pt;
+        text-align: left;
+        letter-spacing: 3px;
+        line-height: 0em;
+        font-family: 'Big John';
+    }
+
+    .info {
+        font-size: 1em;
+        text-align: left;
+        margin: 0;
+    }
+    .info2 {
+        width: 52%;
+        font-size: 15pt;
+    }
+    .vid {
+        margin-bottom: 1em;
+    }
+    .secondary-header {
+        text-align: left;
+        font-size: 40pt;
+        /*margin-left: .5em;*/
+        line-height: 1em;
+    }
+    
+    .subheader {
+        width: 50%;
+        font-weight: bolder;
+        margin-bottom: 1em;
+    }
+    .inner-container {
+        padding-left: 1em;
+    }
+
+    #container-2 {  
+        text-align: left;
+    }
+
+    .headline {
+        font-size: 17pt;
+        font-weight: bold;
+        line-height: 0;
+        margin-bottom: 1.5em;
+    }
+
+}
+
+@media only screen and (min-width: 50em) {
+    /* Style adjustments for viewports that meet the condition */
+
+}
+
