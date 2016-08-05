@@ -260,7 +260,12 @@ textarea {
     }
 }
 
+/*FONT FAMILY*/
 
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Regular.ttf');  
+}
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -645,6 +650,7 @@ textarea {
     .last {
         margin-bottom: 2em;
     }
+
 
 }
 
