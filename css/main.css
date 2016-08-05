@@ -267,6 +267,7 @@ textarea {
 * { 
     color: white;
     font-family: 'Roboto Slab', sans-serif;
+    /*border: 1px solid red;*/
 }
 
 
@@ -277,10 +278,84 @@ textarea {
 .logo {
     height: 100px;
     width: 100px;
-    background-color: red;
-    margin: 1em auto;
+    margin: 2em auto;
+    background-image: url(../img/1-Mobile-Logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.thread-container {
+    position: absolute;
+}
+.thread {
+    height: 27em;
+    width: 50px;
+    background-image: url(../img/2-Mobile-Thread.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 0;
+    left: 8.5em;
+}
+.flowers {
+    background-image: url(../img/3-Mobile-Flowers-Left.jpg);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    top: 0;
+     z-index: -1;
 }
 
+.flowers-right {
+    background-image: url(../img/4-Mobile-Flowers-Right.jpg);
+    position: absolute;
+    height: 100%;
+    width: 103px;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+     z-index: -1;
+}
+
+ .flowers-3 {
+    background-image: url(../img/6-Mobile-Flowers-Left.png);
+    position: absolute;
+    height: 100%;
+    width: 42px;
+    background-repeat: no-repeat;
+     z-index: -1;
+ }
+
+ .flowers-4 {
+    background-image: url(../img/7-Mobile-Flowers-Right.png);
+    position: absolute;
+    height: 100%;
+    width: 139px;
+    right: 0;
+    background-repeat: no-repeat; 
+     z-index: -1;
+ }
+
+.butterfly {
+    background-image: url(../img/8-Mobile-Butterfly-Left.png);
+    position: absolute;
+    background-repeat: no-repeat; 
+    width: 41px;
+    height: 43px;
+    right: 60%;
+     z-index: -1;
+}
+
+.butterfly-2 {
+    background-image: url(../img/9-Mobile-Butterfly-Right.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 61px;
+    height: 64px;
+    right: 40%;
+     z-index: -1;
+}
 .container {
     margin: 0 auto;
     width: 80%;
@@ -291,6 +366,7 @@ textarea {
     color: white;
     text-align: center;
     font-size: 4em;
+    position: relative;
 }
 
 .background {
@@ -311,9 +387,9 @@ textarea {
 .vid {
     width: 100%;
     height: 200px;
-    background-color: green;
-    /*float: right;*/
-    margin-right:5em;
+   /* background-color: green;
+    float: right;
+    margin-right:5em;*/
 }
 
 .subheader {
@@ -331,10 +407,10 @@ textarea {
     color: #da465e;
     /*text-align: center;*/
     font-size: 4em;
-
+    margin-left: -2%;
 }
 
-button {
+.btn {
     color: #a06e1f;
     border: 5px solid #da465e;
     margin: 0 auto;
@@ -342,15 +418,49 @@ button {
     margin-bottom: 3em;
     font-size: 1.1em;
     text-align: center;
-    width: 325px;
+    width: 90%;
+    background-color: transparent;
+
+    /*btn animation*/
+    position: relative;
+  display: inline-block;
+  -webkit-transition: color .5s;
+          transition: color .5s;
 }
+
+.btn:before {
+  content: '';
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background: #da465e;
+  z-index: -1;
+  -webkit-transform:scaleX(0);
+      -ms-transform:scaleX(0);
+          transform:scaleX(0);
+  -webkit-transition: -webkit-transform .5s;
+          transition:         transform .5s;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.btn:hover:before {
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+
 /* ==========================================================================
    PHONE
    ========================================================================== */
-@media only screen and (min-width: 25em) {
+@media only screen and (min-width: 20em) {
     /* Style adjustments for viewports that meet the condition */
-    * {
-        text-align: left;
+    body {
         background-color: black;
     }
 
@@ -369,17 +479,28 @@ button {
         font-family: 'Big John';
     }
 
+    .title-3 {
+        font-size: 35pt;
+        /*padding-top:3em;*/
+        text-align: left;
+        letter-spacing: 3px;
+        line-height: 0em;
+        font-family: 'Big John';
+    }
+
     .info {
         font-size: 1em;
         text-align: left;
         margin: 0;
+        padding-bottom: 2em;
     }
     .info2 {
-        width: 52%;
+        width: 70%;
         font-size: 15pt;
     }
     .vid {
-        margin-bottom: 1em;
+        margin-bottom: 1.5em;
+        width: 100%;
     }
     .secondary-header {
         text-align: left;
@@ -391,7 +512,7 @@ button {
     .subheader {
         width: 50%;
         font-weight: bolder;
-        margin-bottom: 1em;
+        margin-bottom: 1.5em;
     }
     .inner-container {
         padding-left: 1em;
@@ -402,10 +523,124 @@ button {
     }
 
     .headline {
-        font-size: 17pt;
+        font-size: 16.5pt;
         font-weight: bold;
         line-height: 0;
         margin-bottom: 1.5em;
+    }
+    .title-3.headline {
+        font-size: 15pt;
+        line-height: 1em;
+    }
+    .banner {
+        /*height: 20em;*/
+        width: 100%;
+        /*float: left;*/
+        display: inline-block;
+        margin-bottom: -5px;
+    }
+
+    #pink {
+        background-color: #da465e;
+        height: 11em;
+    }
+
+    .card {
+        background-color: white;
+        width: 100%;
+    }
+    .header-3 {
+        font-family: 'Big John';
+        text-transform: uppercase;
+        color: #da465e;
+        font-size: 40pt;
+    }
+    .subheader-2 {
+        color: #a06e1f;        
+        font-size: 1.1em;       
+        font-family: 'Roboto Slab', sans-serif;
+        font-size: 20pt;
+    }
+    .link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Big John';
+        font-size: 30pt;
+    }
+
+    .pink {
+        color: #da465e;
+        font-family: 'Big John';
+        display: block;
+        font-size: 30pt;
+    }
+    .coral {
+        background-image: url(../img/12-Safari-Pattern-All-Sections.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 4em 0 3em 0;
+        z-index: -1;
+    }
+
+    #brown {
+        background-color: #a26e1f;
+        padding: 2em 0;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+    .contained {
+        /*width: 90%;*/
+        /*float: right;*/
+        /*margin-left: 4em;*/
+        /*padding-bottom: 1em;*/
+        padding-left: 3em;
+    }
+    .learn {
+        font-size: 14pt;
+        padding-bottom: 1em;
+        border-bottom: 3px solid white;
+    }
+    .price {
+        font-family: 'Big John';
+        font-size:16pt;
+    }
+    .dandy-man {
+        background-image: url(../img/5-Mobile-Dandy-Man.jpg);
+        position: absolute;
+        height: 100%;
+        width: 188px;
+        right: 0;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+    .mobile-fashion {
+        background-image: url(../img/10-Mobile-Fashion.png); 
+        position: absolute;
+        width: 321px;
+        height: 386px;
+        display: block;
+        
+        background-repeat: no-repeat; 
+    }
+
+    #black {
+        background-color: black;
+        height: 386px;
+    }
+    .photo {
+        height: auto;
+        width: 90%;
+        position: relative;
+        top: -150px;
+    }
+    .banner:last-of-type {
+        margin-bottom: 1em;
+    }
+    .carousel-image {
+        width: 100%;
+        height: 200px;
     }
 
 }
