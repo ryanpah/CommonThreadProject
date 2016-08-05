@@ -284,16 +284,16 @@ textarea {
     background-repeat: no-repeat;
 
 }
-.thread-container {
+/*.thread-container {
     position: absolute;
-}
+}*/
 .thread {
     height: 27em;
     width: 50px;
     background-image: url(../img/2-Mobile-Thread.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    position: relative;
+    position: absolute;
     top: 0;
     left: 8.5em;
 }
