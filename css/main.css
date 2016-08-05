@@ -266,6 +266,11 @@ textarea {
     font-family: 'Roboto Slab';
     src: url('../fonts/RobotoSlab-Regular.ttf');  
 }
+
+@font-face {
+    font-family: 'Big John';
+    src: url('../fonts/BIG JOHN.otf');
+}
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
