@@ -268,6 +268,11 @@ textarea {
 }
 
 @font-face {
+    font-family: 'Roboto Slab Light';
+    src: url('../fonts/RobotoSlab-Light.ttf');
+}
+
+@font-face {
     font-family: 'Big John';
     src: url('../fonts/BIG JOHN.otf');
 }
@@ -547,8 +552,8 @@ textarea {
         /*height: 20em;*/
         width: 100%;
         /*float: left;*/
-        display: inline-block;
-        margin-bottom: -5px;
+        /*display: inline-block;*/
+        /*margin-bottom: -5px;*/
     }
 
     #pink {
@@ -631,9 +636,15 @@ textarea {
         position: absolute;
         width: 321px;
         height: 386px;
-        display: block;
         
         background-repeat: no-repeat; 
+    }
+    .thread-end {
+        background-image: url(../img/13-Mobile-Thread.png); 
+        position: absolute;
+        background-repeat: no-repeat; 
+        width: 227px;
+        height: 154px;
     }
 
     #black {
@@ -653,13 +664,22 @@ textarea {
         width: 100%;
         height: 200px;
     }
+    .carousel-description {
+        color: tan;
+        font-family: 'Roboto Slab Light';
+    }
+    .featured {
+        color: #da465e;
+        text-align: center;
+    }
+
     ul .slick-dots {
         background-color: #da465e;
     }
     .last {
         margin-bottom: 2em;
     }
-
+    
 
 }
 
