@@ -430,6 +430,7 @@ textarea {
     text-align: center;
     width: 90%;
     background-color: transparent;
+    z-index: 100;
 
     /*btn animation*/
     position: relative;
@@ -651,6 +652,9 @@ textarea {
     .carousel-image {
         width: 100%;
         height: 200px;
+    }
+    ul .slick-dots {
+        background-color: #da465e;
     }
     .last {
         margin-bottom: 2em;
