@@ -292,7 +292,7 @@ body {
 
 
 /* ==========================================================================
-   DESKTOP/TABLET
+   DESKTOP
    ========================================================================== */
    .logo {
     height: 100px;
@@ -426,11 +426,6 @@ body {
     z-index: -1;
 }
 
-.background {
-    background-image: url('/exports/floral-2.png');
-    position: fixed;
-}
-
 .info {
     font-family: 'Roboto Slab', sans-serif;
     width: 12em;
@@ -438,7 +433,7 @@ body {
     /*text-align: center;*/
     margin: 0 auto;
     float: left;
-    padding-left: 5em;
+    padding-left: 4.5em;
     padding-top: 1em;
     /*position: relative;*/
     /*top: -23em;*/
@@ -447,12 +442,31 @@ body {
     clear: both;
 }
 
+.info2 {
+            font-family: 'Roboto Slab Light';
+            width: 70%;
+            font-size: 15pt;
+            padding-left: 4em;
+            position: relative;
+            top: 5em;
+            padding-bottom: 7em;
+        
+        }
+
+.outer {
+    position: relative;
+    height: 48em;
+    }
+
 .vid {
     width: 100%;
-    height: 200px;
+    height: 300px;
    /* background-color: green;
     float: right;
     margin-right:5em;*/
+    position: absolute;
+    right: 0;
+    top: 34em;
 }
 
 .subheader {
@@ -518,22 +532,29 @@ body {
   transform: scaleX(1);
 }
 /* ==========================================================================
+   DESKTOP
+   ========================================================================== */
+
+
+
+/* ==========================================================================
    TABLET
    ========================================================================== */
-   @media only screen and (min-width: 30em) {
+   @media only screen and (min-width: 30em) and (max-width: 45em){
     /* Style adjustments for viewports that meet the condition */
     .title {
         font-size: 45pt;
         letter-spacing: 2px;
+        padding-left: 12%;
     }
     .thread {
-        height: 35em;
-        left: 6.5em;
+        height: 27em;
+        left: 9.5em;
     }
     .photo {
         width: 50%;
     }
-    /*MESS*/
+    /* WHAT A MESS*/
 
         #brown {
             background-color: #a26e1f;
@@ -566,7 +587,7 @@ body {
         }
         .photo {
             height: auto;
-            width: 50%;
+            width: 70%;
             position: relative;
             top: 2em;
             /*top: -150px;*/
@@ -599,6 +620,7 @@ body {
             letter-spacing: 2px;
             width: 275px;
             margin: 0 auto;
+            line-height: 1em;
         }
 
         .title-2 {
@@ -622,21 +644,33 @@ body {
             font-size: 1em;
             text-align: left;
             margin: 0;
+            padding-left: 9.5em;
+            padding-top: 2em;
             padding-bottom: 2em;
         }
         .info2 {
+            font-family: 'Roboto Slab Light';
             width: 70%;
             font-size: 15pt;
+            padding-left: 4em;
+            position: relative;
+            top: 5em;
+            padding-bottom: 7em;
+        
         }
         .vid {
             margin-bottom: 1.5em;
-            width: 100%;
+            width: auto;
+            height: 250px;
+            top: 28em;
         }
         .secondary-header {
             text-align: left;
-            font-size: 40pt;
+            font-size: 80pt;
             /*margin-left: .5em;*/
             line-height: 1em;
+            position: absolute;
+
         }
 
         .subheader {
@@ -645,7 +679,7 @@ body {
             margin-bottom: 1.5em;
         }
         .inner-container {
-            padding-left: 1em;
+            padding-left: 10%;
         }
 
         #container-2 {  
@@ -715,7 +749,7 @@ body {
 
 
 
-                                    
+
    ========================================================================== */
    @media only screen and (max-width: 30em)  {
     /* Style adjustments for viewports that meet the condition */
@@ -753,14 +787,21 @@ body {
             text-align: left;
             margin: 0;
             padding-bottom: 2em;
+            padding-left: 4.5em;
         }
         .info2 {
             width: 70%;
             font-size: 15pt;
         }
+        .outer {
+             height: 42em;
+             /*position: inherit;*/
+        }
         .vid {
             margin-bottom: 1.5em;
             width: 100%;
+            position: initial;
+
         }
         .secondary-header {
             text-align: left;
@@ -775,7 +816,7 @@ body {
             margin-bottom: 1.5em;
         }
         .inner-container {
-            padding-left: 1em;
+            padding-left: 10%;
         }
 
         #container-2 {  
