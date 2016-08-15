@@ -398,12 +398,13 @@ body {
 }
 .thread-end {
     background-image: url(../img/13-Mobile-Thread.png); 
-    position: relative;
+    /*position: relative;*/
     background-repeat: no-repeat; 
     width: 227px;
     height: 154px;
-    top: 1.6em;
-    right: -20%;
+    /*top: 1.6em;
+    right: -20%;*/
+    margin: 0 auto;
 }
 
 .coral {
@@ -667,6 +668,19 @@ ul .slick-dots {
     font-family: 'Big John';
     font-size:16pt;
 }
+.desktop-hide {
+        display: none;
+}
+.desktop-show {
+    display: block;
+}
+
+.learn-container, .option-container {
+    display: inline-block;
+    width: 30%;
+    box-sizing: border-box;
+    padding: 0 5%;
+}
 /* ==========================================================================
    DESKTOP
    ========================================================================== */
@@ -714,6 +728,8 @@ ul .slick-dots {
         font-family: 'Big John';
         font-size:16pt;
     }
+
+
 
     #transparent {
         background-color: transparent;
@@ -888,9 +904,6 @@ ul .slick-dots {
         font-size: 30pt;
     }
 
-    .thread-end {
-        right: -30%;
-    }
 
     #pink {
         background-color: #da465e;
@@ -1096,12 +1109,13 @@ ul .slick-dots {
     }
     .thread-end {
         background-image: url(../img/13-Mobile-Thread.png); 
-        position: relative;
+        /*position: relative;*/
         background-repeat: no-repeat; 
         width: 227px;
         height: 154px;
-        top: 1.6em;
-        right: -20%;
+        /*top: 1.6em;
+        right: -20%;*/
+        margin: 0 auto;
     }
 
     #transparent {
@@ -1144,8 +1158,12 @@ ul .slick-dots {
     .last {
         margin-bottom: 4em;
     }
-
-
+.desktop-hide {
+    display: block;
+}
+.desktop-show {
+    display: none;
+}
 }
 
 
