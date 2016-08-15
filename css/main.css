@@ -306,15 +306,18 @@ body {
 .thread-container {
     position: relative;
 }
+.photo {
+    width: 70%;
+}
 .thread {
-    height: 27em;
+    height: 31em;
     width: 50px;
     background-image: url(../img/2-Mobile-Thread.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
     top: -11em;
-    left: 4.5em;
+    left: 5.5em;
 }
 .flowers {
     background-image: url(../img/3-Mobile-Flowers-Left.jpg);
@@ -414,17 +417,24 @@ body {
     margin: 0 auto;
     width: 80%;
 }
-
+.title-container {
+    margin: 0 auto;
+    width: 40%;
+}
 .title {
     font-family: 'Big John';
     color: white;
-    text-align: center;
-    /*font-size: 4em;*/
+    text-align: left;
+    font-size: 4em;
     /*position: relative;*/
     float: left;
     /*top: -10em;*/
     z-index: -1;
+    line-height: 1em;
+    max-width: 300px;
 }
+
+
 
 .info {
     font-family: 'Roboto Slab', sans-serif;
@@ -443,23 +453,27 @@ body {
 }
 
 .info2 {
-            font-family: 'Roboto Slab Light';
-            width: 70%;
-            font-size: 15pt;
-            padding-left: 4em;
-            position: relative;
-            top: 5em;
-            padding-bottom: 7em;
-        
-        }
+    font-family: 'Roboto Slab Light';
+    width: 70%;
+    font-size: 15pt;
+    padding-left: 4em;
+    position: relative;
+    top: 5em;
+    padding-bottom: 7em;
+
+}
+#brown {
+    background-color: #a26e1f;
+    padding: 2em 0;
+}
 
 .outer {
     position: relative;
-    height: 48em;
-    }
+    height: 55em;
+}
 
 .vid {
-    width: 100%;
+    width: auto;
     height: 300px;
    /* background-color: green;
     float: right;
@@ -531,6 +545,128 @@ body {
   -ms-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+.title-2 {
+    font-size: 48pt;
+    text-align: left;
+    letter-spacing: 3px;
+    line-height: 0em;
+    font-family: 'Big John';
+}
+
+.headline {
+    font-size: 16.5pt;
+    font-weight: bold;
+    line-height: 0;
+    margin-bottom: 1.5em;
+}
+.title-3.headline {
+    font-size: 15pt;
+    line-height: 1em;
+}
+
+.banner {
+    /*height: 20em;*/
+    width: 100%;
+    /*float: left;*/
+    /*display: inline-block;*/
+    /*margin-bottom: -5px;*/
+}
+#transparent {
+    background-color: transparent;
+    height: 386px;
+}
+
+.banner:last-of-type {
+    margin-bottom: 1em;
+}
+.carousel-image {
+    width: 100%;
+    height: 200px;
+}
+.carousel-description {
+    color: #a26e1f;
+    font-family: 'Roboto Slab Light';
+}
+.featured {
+    color: #da465e;
+    text-align: center;
+    background-color:black;
+    padding-bottom: 1em;
+}
+.sidewalk-safari {
+    background-color: white;
+    width: 100%;
+    padding-top: 6em;
+}
+
+ul .slick-dots {
+    background-color: #da465e;
+}
+.last {
+    margin-bottom: 4em;
+}
+
+.header-3 {
+    font-family: 'Big John';
+    text-transform: uppercase;
+    color: #da465e;
+    font-size: 40pt;
+}
+.subheader-2 {
+    color: #a06e1f;        
+    font-size: 1.1em;       
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 20pt;
+    padding-top: 0;
+    margin-top: 0;
+}
+.inner-container {
+    padding-left: 10%;
+}
+
+#pink {
+    background-color: #da465e;
+    height: 11em;
+}
+
+.title-3 {
+    font-size: 35pt;
+    /*padding-top:3em;*/
+    text-align: left;
+    letter-spacing: 3px;
+    line-height: 0em;
+    font-family: 'Big John';
+}
+
+.card {
+    background-color: white;
+    width: 100%;
+
+}
+
+.link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Big John';
+    font-size: 30pt;
+}
+
+.pink {
+    color: #da465e;
+    font-family: 'Big John';
+    display: block;
+    font-size: 30pt;
+}
+.learn {
+    font-size: 14pt;
+    padding-bottom: 1em;
+    border-bottom: 3px solid white;
+}
+.price {
+    font-family: 'Big John';
+    font-size:16pt;
+}
 /* ==========================================================================
    DESKTOP
    ========================================================================== */
@@ -540,7 +676,7 @@ body {
 /* ==========================================================================
    TABLET
    ========================================================================== */
-   @media only screen and (min-width: 30em) and (max-width: 45em){
+   @media only screen and (min-width: 35em) and (max-width: 45em){
     /* Style adjustments for viewports that meet the condition */
     .title {
         font-size: 45pt;
@@ -551,196 +687,215 @@ body {
         height: 27em;
         left: 9.5em;
     }
-    .photo {
-        width: 50%;
-    }
+
     /* WHAT A MESS*/
 
-        #brown {
-            background-color: #a26e1f;
-            padding: 2em 0;
-        }
+    #brown {
+        background-color: #a26e1f;
+        padding: 2em 0;
+    }
 
-        .bold {
-            font-weight: bold;
-        }
-        .contained {
-            /*width: 90%;*/
-            /*float: right;*/
-            /*margin-left: 4em;*/
-            /*padding-bottom: 1em;*/
-            padding-left: 3em;
-        }
-        .learn {
-            font-size: 14pt;
-            padding-bottom: 1em;
-            border-bottom: 3px solid white;
-        }
-        .price {
-            font-family: 'Big John';
-            font-size:16pt;
-        }
+    .bold {
+        font-weight: bold;
+    }
+    .contained {
+        /*width: 90%;*/
+        /*float: right;*/
+        /*margin-left: 4em;*/
+        /*padding-bottom: 1em;*/
+        padding-left: 3em;
+    }
+    .learn {
+        font-size: 14pt;
+        padding-bottom: 1em;
+        border-bottom: 3px solid white;
+    }
+    .price {
+        font-family: 'Big John';
+        font-size:16pt;
+    }
 
-     #transparent {
-            background-color: transparent;
-            height: 386px;
-        }
-        .photo {
-            height: auto;
-            width: 70%;
-            position: relative;
-            top: 2em;
-            /*top: -150px;*/
-        }
-        .banner:last-of-type {
-            margin-bottom: 1em;
-        }
-        .carousel-image {
-            width: 100%;
-            height: 200px;
-        }
-        .carousel-description {
-            color: #a26e1f;
-            font-family: 'Roboto Slab Light';
-        }
-        .featured {
-            color: #da465e;
-            text-align: center;
-            background-color:black;
-            padding-bottom: 1em;
-        }
-        .sidewalk-safari {
-            background-color: white;
-            width: 100%;
-            padding-top: 6em;
-        }
-        .title {
-            font-size: 45pt;
-            text-align: left;
-            letter-spacing: 2px;
-            width: 275px;
-            margin: 0 auto;
-            line-height: 1em;
-        }
+    #transparent {
+        background-color: transparent;
+        height: 386px;
+    }
+    .photo {
+        height: auto;
+        width: 70%;
+        position: relative;
+        top: 2em;
+        /*top: -150px;*/
+    }
+    .banner:last-of-type {
+        margin-bottom: 1em;
+    }
+    .carousel-image {
+        width: 100%;
+        height: 200px;
+    }
+    .carousel-description {
+        color: #a26e1f;
+        font-family: 'Roboto Slab Light';
+    }
+    .featured {
+        color: #da465e;
+        text-align: center;
+        background-color:black;
+        padding-bottom: 1em;
+    }
+    .sidewalk-safari {
+        background-color: white;
+        width: 100%;
+        padding-top: 6em;
+    }
+    .title-container {
+        width: 65%;
+    }
+    .title {
+        font-size: 45pt;
+        text-align: left;
+        letter-spacing: 2px;
+        width: 275px;
+        margin: 0 auto;
+        line-height: 1em;
+    }
 
-        .title-2 {
-            font-size: 48pt;
-            text-align: left;
-            letter-spacing: 3px;
-            line-height: 0em;
-            font-family: 'Big John';
-        }
+    .title-2 {
+        font-size: 48pt;
+        text-align: left;
+        letter-spacing: 3px;
+        line-height: 0em;
+        font-family: 'Big John';
+    }
 
-        .title-3 {
-            font-size: 35pt;
-            /*padding-top:3em;*/
-            text-align: left;
-            letter-spacing: 3px;
-            line-height: 0em;
-            font-family: 'Big John';
-        }
+    .title-3 {
+        font-size: 35pt;
+        /*padding-top:3em;*/
+        text-align: left;
+        letter-spacing: 3px;
+        line-height: 0em;
+        font-family: 'Big John';
+    }
 
-        .info {
-            font-size: 1em;
-            text-align: left;
-            margin: 0;
-            padding-left: 9.5em;
-            padding-top: 2em;
-            padding-bottom: 2em;
-        }
-        .info2 {
-            font-family: 'Roboto Slab Light';
-            width: 70%;
-            font-size: 15pt;
-            padding-left: 4em;
-            position: relative;
-            top: 5em;
-            padding-bottom: 7em;
+    .info {
+        font-size: 1em;
+        text-align: left;
+        margin: 0;
+        padding-left: 9.5em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .info2 {
+        font-family: 'Roboto Slab Light';
+        width: 70%;
+        font-size: 15pt;
+        padding-left: 3em;
+        position: relative;
+        top: 4em;
+        padding-bottom: 7em;
         
-        }
-        .vid {
-            margin-bottom: 1.5em;
-            width: auto;
-            height: 250px;
-            top: 28em;
-        }
-        .secondary-header {
-            text-align: left;
-            font-size: 80pt;
-            /*margin-left: .5em;*/
-            line-height: 1em;
-            position: absolute;
+    }
+    .vid {
+        margin-bottom: 1.5em;
+        width: auto;
+        height: 200px;
+        top: 28em;
+    }
+    .secondary-header {
+        text-align: left;
+        font-size: 65pt;
+        /*margin-left: .5em;*/
+        line-height: 1em;
+        position: absolute;
 
-        }
+    }
 
-        .subheader {
-            width: 50%;
-            font-weight: bolder;
-            margin-bottom: 1.5em;
-        }
-        .inner-container {
-            padding-left: 10%;
-        }
+    .btn {
+        padding: .5em;
+        width: auto;
+    }
 
-        #container-2 {  
-            text-align: left;
-        }
+    .subheader {
+        width: auto;
+        font-weight: bolder;
+        margin-bottom: 1.5em;
+    }
+    .inner-container {
+        padding-left: 10%;
+    }
 
-        .headline {
-            font-size: 16.5pt;
-            font-weight: bold;
-            line-height: 0;
-            margin-bottom: 1.5em;
-        }
-        .title-3.headline {
-            font-size: 15pt;
-            line-height: 1em;
-        }
-        .banner {
-            /*height: 20em;*/
-            width: 100%;
-            /*float: left;*/
-            /*display: inline-block;*/
-            /*margin-bottom: -5px;*/
-        }
+    #container-2 {  
+        text-align: left;
+        float: right;
+        position: absolute;
+        left: 21em;
+        width: 50%;
+    }
 
-        #pink {
-            background-color: #da465e;
-            height: 11em;
-        }
+    .headline {
+        font-size: 16.5pt;
+        font-weight: bold;
+        line-height: 0;
+        margin-bottom: 1.5em;
+    }
+    .title-3.headline {
+        font-size: 15pt;
+        line-height: 1em;
+    }
+    .banner {
+        /*height: 20em;*/
+        width: 100%;
+        /*float: left;*/
+        /*display: inline-block;*/
+        /*margin-bottom: -5px;*/
+    }
 
-        .card {
-            background-color: white;
-            width: 100%;
+    #pink {
+        background-color: #da465e;
+        height: 11em;
+    }
 
-        }
-        .header-3 {
-            font-family: 'Big John';
-            text-transform: uppercase;
-            color: #da465e;
-            font-size: 40pt;
-        }
-        .subheader-2 {
-            color: #a06e1f;        
-            font-size: 1.1em;       
-            font-family: 'Roboto Slab', sans-serif;
-            font-size: 20pt;
-            padding-top: 0;
-            margin-top: 0;
-        }
-        .link {
-            text-decoration: none;
-            text-transform: uppercase;
-            font-family: 'Big John';
-            font-size: 30pt;
-        }
+    .card {
+        background-color: white;
+        width: 100%;
 
-        .pink {
-            color: #da465e;
-            font-family: 'Big John';
-            display: block;
-            font-size: 30pt;
-        }
+    }
+    .header-3 {
+        font-family: 'Big John';
+        text-transform: uppercase;
+        color: #da465e;
+        font-size: 40pt;
+    }
+    .subheader-2 {
+        color: #a06e1f;        
+        font-size: 1.1em;       
+        font-family: 'Roboto Slab', sans-serif;
+        font-size: 20pt;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Big John';
+        font-size: 30pt;
+    }
+
+    .pink {
+        color: #da465e;
+        font-family: 'Big John';
+        display: block;
+        font-size: 30pt;
+    }
+
+    .thread-end {
+        right: -30%;
+    }
+
+    #pink {
+        background-color: #da465e;
+        height: 11em;
+    }
 }
 /* ==========================================================================
                                     MOBILE
@@ -750,13 +905,15 @@ body {
 
 
 
-   ========================================================================== */
-   @media only screen and (max-width: 30em)  {
-    /* Style adjustments for viewports that meet the condition */
+ ========================================================================== */
+                                    @media only screen and (max-width: 35em)  {
+                                        /* Style adjustments for viewports that meet the condition */
     /*body {
         background-color: black;
         }*/
-
+        .title-container {
+            width: 65%;
+        }
         .title {
             font-size: 35pt;
             text-align: left;
@@ -790,196 +947,206 @@ body {
             padding-left: 4.5em;
         }
         .info2 {
+            font-family: 'Roboto Slab Light';
             width: 70%;
             font-size: 15pt;
+            position: relative;
+            padding: 0;
+            top: 0;
         }
         .outer {
-             height: 42em;
-             /*position: inherit;*/
-        }
-        .vid {
-            margin-bottom: 1.5em;
-            width: 100%;
-            position: initial;
-
-        }
-        .secondary-header {
-            text-align: left;
-            font-size: 40pt;
-            /*margin-left: .5em;*/
-            line-height: 1em;
-        }
-
-        .subheader {
-            width: 50%;
-            font-weight: bolder;
-            margin-bottom: 1.5em;
-        }
-        .inner-container {
-            padding-left: 10%;
-        }
-
-        #container-2 {  
-            text-align: left;
-        }
-
-        .headline {
-            font-size: 16.5pt;
-            font-weight: bold;
-            line-height: 0;
-            margin-bottom: 1.5em;
-        }
-        .title-3.headline {
-            font-size: 15pt;
-            line-height: 1em;
-        }
-        .banner {
-            /*height: 20em;*/
-            width: 100%;
-            /*float: left;*/
-            /*display: inline-block;*/
-            /*margin-bottom: -5px;*/
-        }
-
-        #pink {
-            background-color: #da465e;
-            height: 11em;
-        }
-
-        .card {
-            background-color: white;
-            width: 100%;
-
-        }
-        .header-3 {
-            font-family: 'Big John';
-            text-transform: uppercase;
-            color: #da465e;
-            font-size: 40pt;
-        }
-        .subheader-2 {
-            color: #a06e1f;        
-            font-size: 1.1em;       
-            font-family: 'Roboto Slab', sans-serif;
-            font-size: 20pt;
-            padding-top: 0;
-            margin-top: 0;
-        }
-        .link {
-            text-decoration: none;
-            text-transform: uppercase;
-            font-family: 'Big John';
-            font-size: 30pt;
-        }
-
-        .pink {
-            color: #da465e;
-            font-family: 'Big John';
-            display: block;
-            font-size: 30pt;
-        }
-        .coral {
-            background-image: url(../img/12-Safari-Pattern-All-Sections.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 4em 0 3em 0;
-            z-index: -1;
-        }
-
-        #brown {
-            background-color: #a26e1f;
-            padding: 2em 0;
-        }
-
-        .bold {
-            font-weight: bold;
-        }
-        .contained {
-            /*width: 90%;*/
-            /*float: right;*/
-            /*margin-left: 4em;*/
-            /*padding-bottom: 1em;*/
-            padding-left: 3em;
-        }
-        .learn {
-            font-size: 14pt;
-            padding-bottom: 1em;
-            border-bottom: 3px solid white;
-        }
-        .price {
-            font-family: 'Big John';
-            font-size:16pt;
-        }
-        .dandy-man {
-            background-image: url(../img/5-Mobile-Dandy-Man.jpg);
-            position: absolute;
-            height: 100%;
-            width: 188px;
-            right: 0;
-            background-repeat: no-repeat;
-            z-index: -1;
-        }
-        .mobile-fashion {
-            background-image: url(../img/10-Mobile-Fashion.png); 
-            position: absolute;
-            width: 321px;
-            height: 386px;
-
-            background-repeat: no-repeat; 
-        }
-        .thread-end {
-            background-image: url(../img/13-Mobile-Thread.png); 
-            position: relative;
-            background-repeat: no-repeat; 
-            width: 227px;
-            height: 154px;
-            top: 1.6em;
-            right: -20%;
-        }
-
-        #transparent {
-            background-color: transparent;
-            height: 386px;
-        }
-        .photo {
-            height: auto;
-            width: 90%;
-            position: relative;
-            top: 2em;
-            /*top: -150px;*/
-        }
-        .banner:last-of-type {
-            margin-bottom: 1em;
-        }
-        .carousel-image {
-            width: 100%;
-            height: 200px;
-        }
-        .carousel-description {
-            color: #a26e1f;
-            font-family: 'Roboto Slab Light';
-        }
-        .featured {
-            color: #da465e;
-            text-align: center;
-            background-color:black;
-            padding-bottom: 1em;
-        }
-        .sidewalk-safari {
-            background-color: white;
-            width: 100%;
-            padding-top: 6em;
-        }
-
-        ul .slick-dots {
-            background-color: #da465e;
-        }
-        .last {
-            margin-bottom: 4em;
-        }
-
+           height: 40em;
+           /*position: inherit;*/
+       }
+       .vid {
+        margin-bottom: 1.5em;
+        width: 100%;
+        position: initial;
+        height: auto;
 
     }
+    .secondary-header {
+        text-align: left;
+        font-size: 40pt;
+        /*margin-left: .5em;*/
+        line-height: 1em;
+    }
+
+    .subheader {
+        width: 50%;
+        font-weight: bolder;
+        margin-bottom: 1.5em;
+    }
+    .inner-container {
+        padding-left: 10%;
+    }
+
+    #container-2 {  
+        text-align: left;
+    }
+
+    .headline {
+        font-size: 16.5pt;
+        font-weight: bold;
+        line-height: 0;
+        margin-bottom: 1.5em;
+    }
+    .title-3.headline {
+        font-size: 15pt;
+        line-height: 1em;
+    }
+    .banner {
+        /*height: 20em;*/
+        width: 100%;
+        /*float: left;*/
+        /*display: inline-block;*/
+        /*margin-bottom: -5px;*/
+    }
+
+    #pink {
+        background-color: #da465e;
+        height: 11em;
+    }
+
+    .card {
+        background-color: white;
+        width: 100%;
+
+    }
+    .header-3 {
+        font-family: 'Big John';
+        text-transform: uppercase;
+        color: #da465e;
+        font-size: 40pt;
+    }
+    .subheader-2 {
+        color: #a06e1f;        
+        font-size: 1.1em;       
+        font-family: 'Roboto Slab', sans-serif;
+        font-size: 20pt;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Big John';
+        font-size: 30pt;
+    }
+
+    .pink {
+        color: #da465e;
+        font-family: 'Big John';
+        display: block;
+        font-size: 30pt;
+    }
+    .learn {
+        font-size: 14pt;
+        padding-bottom: 1em;
+        border-bottom: 3px solid white;
+    }
+    .price {
+        font-family: 'Big John';
+        font-size:16pt;
+    }
+    .coral {
+        background-image: url(../img/12-Safari-Pattern-All-Sections.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 4em 0 3em 0;
+        z-index: -1;
+    }
+
+    #brown {
+        background-color: #a26e1f;
+        padding: 2em 0;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+    .contained {
+        /*width: 90%;*/
+        /*float: right;*/
+        /*margin-left: 4em;*/
+        /*padding-bottom: 1em;*/
+        padding-left: 3em;
+    }
+
+    .dandy-man {
+        background-image: url(../img/5-Mobile-Dandy-Man.jpg);
+        position: absolute;
+        height: 100%;
+        width: 188px;
+        right: 0;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+    .mobile-fashion {
+        background-image: url(../img/10-Mobile-Fashion.png); 
+        position: absolute;
+        width: 321px;
+        height: 386px;
+
+        background-repeat: no-repeat; 
+    }
+    .thread {
+        height: 23em;
+        left: 4.5em;
+    }
+    .thread-end {
+        background-image: url(../img/13-Mobile-Thread.png); 
+        position: relative;
+        background-repeat: no-repeat; 
+        width: 227px;
+        height: 154px;
+        top: 1.6em;
+        right: -20%;
+    }
+
+    #transparent {
+        background-color: transparent;
+        height: 386px;
+    }
+    .photo {
+        height: auto;
+        width: 90%;
+        position: relative;
+        top: 2em;
+        /*top: -150px;*/
+    }
+    .banner:last-of-type {
+        margin-bottom: 1em;
+    }
+    .carousel-image {
+        width: 100%;
+        height: 200px;
+    }
+    .carousel-description {
+        color: #a26e1f;
+        font-family: 'Roboto Slab Light';
+    }
+    .featured {
+        color: #da465e;
+        text-align: center;
+        background-color:black;
+        padding-bottom: 1em;
+    }
+    .sidewalk-safari {
+        background-color: white;
+        width: 100%;
+        padding-top: 6em;
+    }
+
+    ul .slick-dots {
+        background-color: #da465e;
+    }
+    .last {
+        margin-bottom: 4em;
+    }
+
+
+}
 
 
 
