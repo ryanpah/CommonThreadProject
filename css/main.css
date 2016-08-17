@@ -10,10 +10,11 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-   html {
-    color: #222;
+html
+{
     font-size: 1em;
     line-height: 1.4;
+    color: #222;
 }
 
 /*
@@ -24,12 +25,14 @@
  * Customize the background color to match your design.
  */
 
- ::-moz-selection {
+::-moz-selection
+{
     background: #b3d4fc;
     text-shadow: none;
 }
 
-::selection {
+::selection
+{
     background: #b3d4fc;
     text-shadow: none;
 }
@@ -38,13 +41,16 @@
  * A better looking default horizontal rule
  */
 
- hr {
+hr
+{
     display: block;
+
     height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
+
+    border: 0;
+    border-top: 1px solid #ccc;
 }
 
 /*
@@ -53,12 +59,13 @@
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
- audio,
- canvas,
- iframe,
- img,
- svg,
- video {
+audio,
+canvas,
+iframe,
+img,
+svg,
+video
+{
     vertical-align: middle;
 }
 
@@ -66,17 +73,20 @@
  * Remove default fieldset styles.
  */
 
- fieldset {
-    border: 0;
+fieldset
+{
     margin: 0;
     padding: 0;
+
+    border: 0;
 }
 
 /*
  * Allow only vertical resizing of textareas.
  */
 
- textarea {
+textarea
+{
     resize: vertical;
 }
 
@@ -84,11 +94,13 @@
    Browser Upgrade Prompt
    ========================================================================== */
 
-   .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
+.browserupgrade
+{
+    margin: .2em 0;
+    padding: .2em 0;
+
     color: #000;
-    padding: 0.2em 0;
+    background: #ccc;
 }
 
 
@@ -100,7 +112,8 @@
  * Hide visually and from screen readers
  */
 
- .hidden {
+.hidden
+{
     display: none !important;
 }
 
@@ -109,15 +122,19 @@
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
 
- .visuallyhidden {
-    border: 0;
+.visuallyhidden
+{
+    position: absolute;
+
+    overflow: hidden;
     clip: rect(0 0 0 0);
+
+    width: 1px;
     height: 1px;
     margin: -1px;
-    overflow: hidden;
     padding: 0;
-    position: absolute;
-    width: 1px;
+
+    border: 0;
 }
 
 /*
@@ -126,21 +143,25 @@
  * https://www.drupal.org/node/897638
  */
 
- .visuallyhidden.focusable:active,
- .visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus
+{
+    position: static;
+
+    overflow: visible;
     clip: auto;
+
+    width: auto;
     height: auto;
     margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
 }
 
 /*
  * Hide visually and from screen readers, but maintain layout
  */
 
- .invisible {
+.invisible
+{
     visibility: hidden;
 }
 
@@ -156,13 +177,16 @@
  *    `:before` to contain the top-margins of child elements.
  */
 
- .clearfix:before,
- .clearfix:after {
-    content: " "; /* 1 */
+.clearfix:before,
+.clearfix:after
+{
     display: table; /* 2 */
+
+    content: ' '; /* 1 */
 }
 
-.clearfix:after {
+.clearfix:after
+{
     clear: both;
 }
 
@@ -174,10 +198,11 @@
 
 
 
-   @media print,
+@media print,
    (-webkit-min-device-pixel-ratio: 1.25),
    (min-resolution: 1.25dppx),
-   (min-resolution: 120dpi) {
+   (min-resolution: 120dpi)
+{
     /* Style adjustments for high resolution devices */
 }
 
@@ -187,30 +212,35 @@
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-   @media print {
+@media print
+{
     *,
     *:before,
     *:after,
     *:first-letter,
-    *:first-line {
-        background: transparent !important;
+    *:first-line
+    {
         color: #000 !important; /* Black prints faster:
         http://www.sanbeiji.com/archives/953 */
+        background: transparent !important;
         box-shadow: none !important;
         text-shadow: none !important;
     }
 
     a,
-    a:visited {
+    a:visited
+    {
         text-decoration: underline;
     }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
+    a[href]:after
+    {
+        content: ' (' attr(href) ')';
     }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
+    abbr[title]:after
+    {
+        content: ' (' attr(title) ')';
     }
 
     /*
@@ -218,14 +248,17 @@
      * or use the `javascript:` pseudo protocol
      */
 
-     a[href^="#"]:after,
-     a[href^="javascript:"]:after {
-        content: "";
+    a[href^='#']:after,
+    a[href^='javascript:']:after
+    {
+        content: '';
     }
 
     pre,
-    blockquote {
+    blockquote
+    {
         border: 1px solid #999;
+
         page-break-inside: avoid;
     }
 
@@ -234,58 +267,72 @@
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
 
-     thead {
+    thead
+    {
         display: table-header-group;
     }
 
     tr,
-    img {
+    img
+    {
         page-break-inside: avoid;
     }
 
-    img {
+    img
+    {
         max-width: 100% !important;
     }
 
     p,
     h2,
-    h3 {
+    h3
+    {
         orphans: 3;
         widows: 3;
     }
 
     h2,
-    h3 {
+    h3
+    {
         page-break-after: avoid;
     }
 }
 
 /*FONT FAMILY*/
 
-@font-face {
+@font-face
+{
     font-family: 'Roboto Slab';
-    src: url('../fonts/RobotoSlab-Regular.ttf');  
+
+    src: url('../fonts/RobotoSlab-Regular.ttf');
 }
 
-@font-face {
+@font-face
+{
     font-family: 'Roboto Slab Light';
+
     src: url('../fonts/RobotoSlab-Light.ttf');
 }
 
-@font-face {
+@font-face
+{
     font-family: 'Big John';
+
     src: url('../fonts/BIG JOHN.otf');
 }
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   * { 
-    color: white;
+*
+{
     font-family: 'Roboto Slab', sans-serif;
+
+    color: white;
     /*border: 1px solid red;*/
 }
 
-body {
+body
+{
     background-color: black;
 }
 
@@ -294,391 +341,507 @@ body {
 /* ==========================================================================
    DESKTOP
    ========================================================================== */
-   .logo {
-    height: 100px;
+.logo
+{
     width: 100px;
+    height: 100px;
     margin: 2em 45%;
-    background-image: url(../img/1-Mobile-Logo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
 
+    background-image: url(../img/1-Mobile-Logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
-.thread-container {
+.thread-container
+{
     position: relative;
 }
-.photo {
+.photo
+{
     width: 70%;
 }
-.thread {
-    height: 31em;
-    width: 50px;
-    background-image: url(../img/2-Mobile-Thread.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
+.thread
+{
     position: absolute;
     top: -11em;
     left: 5.5em;
-}
-.flowers {
-    background-image: url(../img/3-Mobile-Flowers-Left.jpg);
-    position: absolute;
-    height: 100%;
-    width: 88px;
+
+    width: 50px;
+    height: 31em;
+
+    background-image: url(../img/2-Mobile-Thread.jpg);
     background-repeat: no-repeat;
+    background-size: contain;
+}
+.flowers
+{
+    position: absolute;
+    z-index: -1;
     top: 0;
     left: 0;
-    z-index: -1;
+
+    width: 88px;
+    height: 100%;
+
+    background-image: url(../img/3-Mobile-Flowers-Left.jpg);
+    background-repeat: no-repeat;
 }
 
-.flowers-right {
-    background-image: url(../img/4-Mobile-Flowers-Right.jpg);
+.flowers-right
+{
     position: absolute;
-    height: 100%;
-    width: 103px;
-    background-repeat: no-repeat;
+    z-index: -1;
     top: 0;
     right: 0;
-    z-index: -1;
-}
 
-.flowers-3 {
-    background-image: url(../img/6-Mobile-Flowers-Left.png);
-    position: absolute;
+    width: 103px;
     height: 100%;
-    width: 42px;
+
+    background-image: url(../img/4-Mobile-Flowers-Right.jpg);
     background-repeat: no-repeat;
-    z-index: -1;
 }
 
-.flowers-4 {
-    background-image: url(../img/7-Mobile-Flowers-Right.png);
+.flowers-3
+{
     position: absolute;
+    z-index: -1;
+
+    width: 42px;
     height: 100%;
-    width: 139px;
-    right: 0;
-    background-repeat: no-repeat; 
-    z-index: -1;
+
+    background-image: url(../img/6-Mobile-Flowers-Left.png);
+    background-repeat: no-repeat;
 }
 
-.butterfly {
-    background-image: url(../img/8-Mobile-Butterfly-Left.png);
+.flowers-4
+{
     position: absolute;
-    background-repeat: no-repeat; 
+    z-index: -1;
+    right: 0;
+
+    width: 139px;
+    height: 100%;
+
+    background-image: url(../img/7-Mobile-Flowers-Right.png);
+    background-repeat: no-repeat;
+}
+
+.butterfly
+{
+    position: absolute;
+    z-index: -1;
+    right: 60%;
+
     width: 41px;
     height: 43px;
-    right: 60%;
-    z-index: -1;
+
+    background-image: url(../img/8-Mobile-Butterfly-Left.png);
+    background-repeat: no-repeat;
 }
 
-.butterfly-2 {
-    background-image: url(../img/9-Mobile-Butterfly-Right.png);
+.butterfly-2
+{
     position: absolute;
-    background-repeat: no-repeat;
+    z-index: -1;
+    right: 40%;
+
     width: 61px;
     height: 64px;
-    right: 40%;
-    z-index: -1;
-}
-.dandy-man {
-    background-image: url(../img/5-Mobile-Dandy-Man.jpg);
-    position: absolute;
-    height: 100%;
-    width: 188px;
-    right: 0;
+
+    background-image: url(../img/9-Mobile-Butterfly-Right.png);
     background-repeat: no-repeat;
-    z-index: -1;
 }
-.mobile-fashion {
-    background-image: url(../img/10-Mobile-Fashion.png); 
+.dandy-man
+{
     position: absolute;
+    z-index: -1;
+    right: 0;
+
+    width: 188px;
+    height: 100%;
+
+    background-image: url(../img/5-Mobile-Dandy-Man.jpg);
+    background-repeat: no-repeat;
+}
+.mobile-fashion
+{
+    position: absolute;
+
     width: 321px;
     height: 386px;
 
-    background-repeat: no-repeat; 
+    background-image: url(../img/10-Mobile-Fashion.png);
+    background-repeat: no-repeat;
 }
-.thread-end {
-    background-image: url(../img/13-Mobile-Thread.png); 
-    /*position: relative;*/
-    background-repeat: no-repeat; 
+.thread-end
+{
     width: 227px;
     height: 154px;
     /*top: 1.6em;
     right: -20%;*/
     margin: 0 auto;
+
+    background-image: url(../img/13-Mobile-Thread.png);
+    /*position: relative;*/
+    background-repeat: no-repeat;
 }
 
-.coral {
+.coral
+{
+    z-index: -1;
+
+    padding: 4em 0 3em 0;
+
     background-image: url(../img/12-Safari-Pattern-All-Sections.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 4em 0 3em 0;
-    z-index: -1;
 }
-.container {
-    margin: 0 auto;
+.container
+{
     width: 80%;
-}
-.title-container {
     margin: 0 auto;
+}
+.title-container
+{
     width: 40%;
-}
-.title {
-    font-family: 'Big John';
-    color: white;
-    text-align: left;
-    font-size: 4em;
-    /*position: relative;*/
-    float: left;
-    /*top: -10em;*/
-    z-index: -1;
-    line-height: 1em;
-    max-width: 300px;
-}
-
-
-
-.info {
-    font-family: 'Roboto Slab', sans-serif;
-    width: 12em;
-    color: white;
-    /*text-align: center;*/
     margin: 0 auto;
+}
+.title
+{
+    font-family: 'Big John';
+    font-size: 4em;
+    line-height: 1em;
+    /*top: -10em;*/
+
+    z-index: -1;
+    /*position: relative;*/
+
     float: left;
-    padding-left: 4.5em;
-    padding-top: 1em;
+
+    max-width: 300px;
+
+    text-align: left;
+
+    color: white;
+}
+
+
+
+.info
+{
+    font-family: 'Roboto Slab', sans-serif;
+
+    float: left;
     /*position: relative;*/
     /*top: -23em;*/
     /*top: -26em;
     left: 5em;*/
     clear: both;
+
+    width: 12em;
+    /*text-align: center;*/
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-left: 4.5em;
+
+    color: white;
 }
 
-.info2 {
+.info2
+{
     font-family: 'Roboto Slab Light';
-    width: 70%;
     font-size: 15pt;
-    padding-left: 4em;
+
     position: relative;
     top: 5em;
+
+    width: 70%;
     padding-bottom: 7em;
-
+    padding-left: 4em;
 }
-#brown {
-    background-color: #a26e1f;
+#brown
+{
     padding: 2em 0;
+
+    background-color: #a26e1f;
 }
 
-.outer {
+.outer
+{
     position: relative;
+
     height: 55em;
 }
 
-.vid {
-    width: auto;
-    height: 300px;
-   /* background-color: green;
+.vid
+{
+    /* background-color: green;
     float: right;
     margin-right:5em;*/
     position: absolute;
-    right: 0;
     top: 34em;
+    right: 0;
+
+    width: auto;
+    height: 300px;
 }
 
-.subheader {
+.subheader
+{
     font-family: 'Roboto Slab', sans-serif;
     font-style: bold;
-    color: white;
     /*text-align: center;*/
+
     text-transform: uppercase;
 
+    color: white;
 }
 
-.secondary-header {
+.secondary-header
+{
     font-family: 'Big John';
-    text-transform: uppercase;
-    color: #da465e;
     /*text-align: center;*/
     font-size: 4em;
+
     margin-left: -2%;
+
+    text-transform: uppercase;
+
+    color: #da465e;
 }
 
-.btn {
-    color: #a06e1f;
-    border: 5px solid #da465e;
-    margin: 0 auto;
-    padding: 1em;
-    margin-bottom: 3em;
+.btn
+{
     font-size: 1.1em;
-    text-align: center;
-    width: 100%;
-    background-color: transparent;
+    /*btn animation*/
+
+    position: relative;
     z-index: 100;
 
-    /*btn animation*/
-    position: relative;
     display: inline-block;
+
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 3em;
+    padding: 1em;
+
     -webkit-transition: color .5s;
-    transition: color .5s;
+            transition: color .5s;
+    text-align: center;
+
+    color: #a06e1f;
+    border: 5px solid #da465e;
+    background-color: transparent;
 }
 
-.btn:before {
-  content: '';
-  position: absolute;
-  top: 0; 
-  left: 0;
-  width: 100%; 
-  height: 100%;
-  background: #da465e;
-  z-index: -1;
-  -webkit-transform:scaleX(0);
-  -ms-transform:scaleX(0);
-  transform:scaleX(0);
-  -webkit-transition: -webkit-transform .5s;
-  transition:         transform .5s;
+.btn:before
+{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+    -webkit-transition: -webkit-transform .5s;
+            transition:         transform .5s;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+
+    background: #da465e;
 }
 
-.btn:hover {
-  color: #fff;
+.btn:hover
+{
+    color: #fff;
 }
 
-.btn:hover:before {
-  -webkit-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  transform: scaleX(1);
+.btn:hover:before
+{
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
 }
 
-.title-2 {
+.title-2
+{
+    font-family: 'Big John';
     font-size: 48pt;
+    line-height: 0;
+
     text-align: left;
     letter-spacing: 3px;
-    line-height: 0em;
-    font-family: 'Big John';
 }
 
-.headline {
+.headline
+{
     font-size: 16.5pt;
     font-weight: bold;
     line-height: 0;
+
     margin-bottom: 1.5em;
 }
-.title-3.headline {
+.title-3.headline
+{
     font-size: 15pt;
     line-height: 1em;
 }
 
-.banner {
+.banner
+{
     /*height: 20em;*/
     width: 100%;
     /*float: left;*/
     /*display: inline-block;*/
     /*margin-bottom: -5px;*/
 }
-#transparent {
-    background-color: transparent;
+#transparent
+{
     height: 386px;
+
+    background-color: transparent;
 }
 
-.banner:last-of-type {
+.banner:last-of-type
+{
     margin-bottom: 1em;
 }
-.carousel-image {
+.carousel-image
+{
     width: 80%;
     height: 400px;
 }
-.carousel-description {
-    color: #a26e1f;
+.carousel-description
+{
     font-family: 'Roboto Slab Light';
+
+    color: #a26e1f;
 }
-.featured {
-    color: #da465e;
-    text-align: center;
-    background-color:black;
+.featured
+{
     padding-bottom: 1em;
+
+    text-align: center;
+
+    color: #da465e;
+    background-color: black;
 }
-.sidewalk-safari {
-    background-color: white;
+.sidewalk-safari
+{
     width: 100%;
     padding-top: 6em;
+
+    background-color: white;
 }
 
-ul .slick-dots {
+ul .slick-dots
+{
     background-color: #da465e;
 }
-.last {
+.last
+{
     margin-bottom: 4em;
 }
 
-.header-3 {
+.header-3
+{
     font-family: 'Big John';
-    text-transform: uppercase;
-    color: #da465e;
     font-size: 40pt;
+
+    text-transform: uppercase;
+
+    color: #da465e;
 }
-.subheader-2 {
-    color: #a06e1f;        
-    font-size: 1.1em;       
+.subheader-2
+{
     font-family: 'Roboto Slab', sans-serif;
+    font-size: 1.1em;
     font-size: 20pt;
-    padding-top: 0;
+
     margin-top: 0;
+    padding-top: 0;
+
+    color: #a06e1f;
 }
-.inner-container {
+.inner-container
+{
     padding-left: 10%;
 }
 
-#pink {
-    background-color: #da465e;
+#pink
+{
     height: 11em;
+
+    background-color: #da465e;
 }
 
-.title-3 {
+.title-3
+{
+    font-family: 'Big John';
     font-size: 35pt;
+    line-height: 0;
     /*padding-top:3em;*/
+
     text-align: left;
     letter-spacing: 3px;
-    line-height: 0em;
-    font-family: 'Big John';
 }
 
-.card {
-    background-color: white;
+.card
+{
     width: 100%;
 
+    background-color: white;
 }
 
-.link {
+.link
+{
+    font-family: 'Big John';
+    font-size: 30pt;
+
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'Big John';
-    font-size: 30pt;
 }
 
-.pink {
-    color: #da465e;
+.pink
+{
     font-family: 'Big John';
-    display: block;
     font-size: 30pt;
+
+    display: block;
+
+    color: #da465e;
 }
-.learn {
+.learn
+{
     font-size: 14pt;
+
     padding-bottom: 1em;
+
     border-bottom: 3px solid white;
 }
-.price {
+.price
+{
     font-family: 'Big John';
-    font-size:16pt;
+    font-size: 16pt;
 }
-.desktop-hide {
-        display: none;
+.desktop-hide
+{
+    display: none;
 }
-.desktop-show {
+.desktop-show
+{
     display: block;
 }
 
-.learn-container, .option-container {
+.learn-container,
+.option-container
+{
     display: inline-block;
-    width: 30%;
+
     box-sizing: border-box;
+    width: 30%;
     padding: 0 5%;
 }
 /* ==========================================================================
@@ -690,175 +853,231 @@ ul .slick-dots {
 /* ==========================================================================
    TABLET
    ========================================================================== */
-   @media only screen and (min-width: 35em) and (max-width: 45em){
+@media only screen and (min-width: 35em) and (max-width: 45em)
+{
     /* Style adjustments for viewports that meet the condition */
-    .title {
+    .title
+    {
         font-size: 45pt;
-        letter-spacing: 2px;
+
         padding-left: 12%;
+
+        letter-spacing: 2px;
     }
-    .thread {
-        height: 27em;
+    .thread
+    {
         left: 9.5em;
+
+        height: 27em;
     }
 
     /* WHAT A MESS*/
 
-    #brown {
-        background-color: #a26e1f;
+    #brown
+    {
         padding: 2em 0;
+
+        background-color: #a26e1f;
     }
 
-    .bold {
+    .bold
+    {
         font-weight: bold;
     }
-    .contained {
+    .contained
+    {
         /*width: 90%;*/
         /*float: right;*/
         /*margin-left: 4em;*/
         /*padding-bottom: 1em;*/
         padding-left: 3em;
     }
-    .learn {
+    .learn
+    {
         font-size: 14pt;
+
         padding-bottom: 1em;
+
         border-bottom: 3px solid white;
     }
-    .price {
+    .price
+    {
         font-family: 'Big John';
-        font-size:16pt;
+        font-size: 16pt;
     }
 
 
 
-    #transparent {
-        background-color: transparent;
+    #transparent
+    {
         height: 386px;
+
+        background-color: transparent;
     }
-    .photo {
-        height: auto;
-        width: 70%;
+    .photo
+    {
         position: relative;
         top: 2em;
+
+        width: 70%;
+        height: auto;
         /*top: -150px;*/
     }
-    .banner:last-of-type {
+    .banner:last-of-type
+    {
         margin-bottom: 1em;
     }
-    .carousel-image {
+    .carousel-image
+    {
         width: 100%;
         height: 400px;
     }
-    .carousel-description {
-        color: #a26e1f;
+    .carousel-description
+    {
         font-family: 'Roboto Slab Light';
+
+        color: #a26e1f;
     }
-    .featured {
-        color: #da465e;
-        text-align: center;
-        background-color:black;
+    .featured
+    {
         padding-bottom: 1em;
+
+        text-align: center;
+
+        color: #da465e;
+        background-color: black;
     }
-    .sidewalk-safari {
-        background-color: white;
+    .sidewalk-safari
+    {
         width: 100%;
         padding-top: 6em;
+
+        background-color: white;
     }
-    .title-container {
+    .title-container
+    {
         width: 65%;
     }
-    .title {
+    .title
+    {
         font-size: 45pt;
-        text-align: left;
-        letter-spacing: 2px;
+        line-height: 1em;
+
         width: 275px;
         margin: 0 auto;
-        line-height: 1em;
+
+        text-align: left;
+        letter-spacing: 2px;
     }
 
-    .title-2 {
+    .title-2
+    {
+        font-family: 'Big John';
         font-size: 48pt;
+        line-height: 0;
+
         text-align: left;
         letter-spacing: 3px;
-        line-height: 0em;
-        font-family: 'Big John';
     }
 
-    .title-3 {
+    .title-3
+    {
+        font-family: 'Big John';
         font-size: 35pt;
+        line-height: 0;
         /*padding-top:3em;*/
+
         text-align: left;
         letter-spacing: 3px;
-        line-height: 0em;
-        font-family: 'Big John';
     }
 
-    .info {
+    .info
+    {
         font-size: 1em;
-        text-align: left;
+
         margin: 0;
-        padding-left: 9.5em;
         padding-top: 2em;
         padding-bottom: 2em;
+        padding-left: 9.5em;
+
+        text-align: left;
     }
-    .info2 {
+    .info2
+    {
         font-family: 'Roboto Slab Light';
-        width: 70%;
         font-size: 15pt;
-        padding-left: 3em;
+
         position: relative;
         top: 4em;
+
+        width: 70%;
         padding-bottom: 7em;
-        
+        padding-left: 3em;
     }
-    .vid {
-        margin-bottom: 1.5em;
+    .vid
+    {
+        top: 28em;
+
         width: auto;
         height: 200px;
-        top: 28em;
+        margin-bottom: 1.5em;
     }
-    .secondary-header {
-        text-align: left;
+    .secondary-header
+    {
         font-size: 65pt;
         /*margin-left: .5em;*/
         line-height: 1em;
+
         position: absolute;
 
+        text-align: left;
     }
 
-    .btn {
+    .btn
+    {
+        width: auto;
         padding: .5em;
-        width: auto;
     }
 
-    .subheader {
-        width: auto;
+    .subheader
+    {
         font-weight: bolder;
+
+        width: auto;
         margin-bottom: 1.5em;
     }
-    .inner-container {
+    .inner-container
+    {
         padding-left: 10%;
     }
 
-    #container-2 {  
-        text-align: left;
-        float: right;
+    #container-2
+    {
         position: absolute;
         left: 21em;
+
+        float: right;
+
         width: 50%;
+
+        text-align: left;
     }
 
-    .headline {
+    .headline
+    {
         font-size: 16.5pt;
         font-weight: bold;
         line-height: 0;
+
         margin-bottom: 1.5em;
     }
-    .title-3.headline {
+    .title-3.headline
+    {
         font-size: 15pt;
         line-height: 1em;
     }
-    .banner {
+    .banner
+    {
         /*height: 20em;*/
         width: 100%;
         /*float: left;*/
@@ -866,48 +1085,64 @@ ul .slick-dots {
         /*margin-bottom: -5px;*/
     }
 
-    #pink {
-        background-color: #da465e;
+    #pink
+    {
         height: 11em;
+
+        background-color: #da465e;
     }
 
-    .card {
-        background-color: white;
+    .card
+    {
         width: 100%;
 
+        background-color: white;
     }
-    .header-3 {
+    .header-3
+    {
         font-family: 'Big John';
-        text-transform: uppercase;
-        color: #da465e;
         font-size: 40pt;
+
+        text-transform: uppercase;
+
+        color: #da465e;
     }
-    .subheader-2 {
-        color: #a06e1f;        
-        font-size: 1.1em;       
+    .subheader-2
+    {
         font-family: 'Roboto Slab', sans-serif;
+        font-size: 1.1em;
         font-size: 20pt;
-        padding-top: 0;
+
         margin-top: 0;
+        padding-top: 0;
+
+        color: #a06e1f;
     }
-    .link {
+    .link
+    {
+        font-family: 'Big John';
+        font-size: 30pt;
+
         text-decoration: none;
         text-transform: uppercase;
-        font-family: 'Big John';
-        font-size: 30pt;
     }
 
-    .pink {
-        color: #da465e;
+    .pink
+    {
         font-family: 'Big John';
+        font-size: 30pt;
+
         display: block;
-        font-size: 30pt;
+
+        color: #da465e;
     }
 
 
-    #pink {
-        background-color: #da465e;
+    #pink
+    {
         height: 11em;
+
+        background-color: #da465e;
     }
 }
 /* ==========================================================================
@@ -919,96 +1154,123 @@ ul .slick-dots {
 
 
  ========================================================================== */
-                                    @media only screen and (max-width: 35em)  {
-                                        /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 35em)
+{
+    /* Style adjustments for viewports that meet the condition */
     /*body {
         background-color: black;
         }*/
-        .title-container {
-            width: 65%;
-        }
-        .title {
-            font-size: 35pt;
-            text-align: left;
-            letter-spacing: 3px;
-            width: 275px;
-            margin: 0 auto;
-            /*float: none;*/
-        }
-        .title-2 {
-            font-size: 48pt;
-            text-align: left;
-            letter-spacing: 3px;
-            line-height: 0em;
-            font-family: 'Big John';
-        }
-
-        .title-3 {
-            font-size: 35pt;
-            /*padding-top:3em;*/
-            text-align: left;
-            letter-spacing: 3px;
-            line-height: 0em;
-            font-family: 'Big John';
-        }
-
-        .info {
-            font-size: 1em;
-            text-align: left;
-            margin: 0;
-            padding-bottom: 2em;
-            padding-left: 4.5em;
-        }
-        .info2 {
-            font-family: 'Roboto Slab Light';
-            width: 70%;
-            font-size: 15pt;
-            position: relative;
-            padding: 0;
-            top: 0;
-        }
-        .outer {
-           height: 40em;
-           /*position: inherit;*/
-       }
-       .vid {
-        margin-bottom: 1.5em;
-        width: 100%;
-        position: initial;
-        height: auto;
-
+    .title-container
+    {
+        width: 65%;
     }
-    .secondary-header {
+    .title
+    {
+        font-size: 35pt;
+
+        width: 275px;
+        margin: 0 auto;
+
         text-align: left;
+        letter-spacing: 3px;
+        /*float: none;*/
+    }
+    .title-2
+    {
+        font-family: 'Big John';
+        font-size: 48pt;
+        line-height: 0;
+
+        text-align: left;
+        letter-spacing: 3px;
+    }
+
+    .title-3
+    {
+        font-family: 'Big John';
+        font-size: 35pt;
+        line-height: 0;
+        /*padding-top:3em;*/
+
+        text-align: left;
+        letter-spacing: 3px;
+    }
+
+    .info
+    {
+        font-size: 1em;
+
+        margin: 0;
+        padding-bottom: 2em;
+        padding-left: 4.5em;
+
+        text-align: left;
+    }
+    .info2
+    {
+        font-family: 'Roboto Slab Light';
+        font-size: 15pt;
+
+        position: relative;
+        top: 0;
+
+        width: 70%;
+        padding: 0;
+    }
+    .outer
+    {
+        height: 40em;
+        /*position: inherit;*/
+    }
+    .vid
+    {
+        position: initial;
+
+        width: 100%;
+        height: auto;
+        margin-bottom: 1.5em;
+    }
+    .secondary-header
+    {
         font-size: 40pt;
         /*margin-left: .5em;*/
         line-height: 1em;
-    }
 
-    .subheader {
-        width: 50%;
-        font-weight: bolder;
-        margin-bottom: 1.5em;
-    }
-    .inner-container {
-        padding-left: 10%;
-    }
-
-    #container-2 {  
         text-align: left;
     }
 
-    .headline {
+    .subheader
+    {
+        font-weight: bolder;
+
+        width: 50%;
+        margin-bottom: 1.5em;
+    }
+    .inner-container
+    {
+        padding-left: 10%;
+    }
+
+    #container-2
+    {
+        text-align: left;
+    }
+
+    .headline
+    {
         font-size: 16.5pt;
         font-weight: bold;
         line-height: 0;
+
         margin-bottom: 1.5em;
     }
-    .title-3.headline {
+    .title-3.headline
+    {
         font-size: 15pt;
         line-height: 1em;
     }
-    .banner {
+    .banner
+    {
         /*height: 20em;*/
         width: 100%;
         /*float: left;*/
@@ -1016,69 +1278,94 @@ ul .slick-dots {
         /*margin-bottom: -5px;*/
     }
 
-    #pink {
-        background-color: #da465e;
+    #pink
+    {
         height: 11em;
+
+        background-color: #da465e;
     }
 
-    .card {
-        background-color: white;
+    .card
+    {
         width: 100%;
 
+        background-color: white;
     }
-    .header-3 {
+    .header-3
+    {
         font-family: 'Big John';
-        text-transform: uppercase;
-        color: #da465e;
         font-size: 40pt;
+
+        text-transform: uppercase;
+
+        color: #da465e;
     }
-    .subheader-2 {
-        color: #a06e1f;        
-        font-size: 1.1em;       
+    .subheader-2
+    {
         font-family: 'Roboto Slab', sans-serif;
+        font-size: 1.1em;
         font-size: 20pt;
-        padding-top: 0;
+
         margin-top: 0;
+        padding-top: 0;
+
+        color: #a06e1f;
     }
-    .link {
+    .link
+    {
+        font-family: 'Big John';
+        font-size: 30pt;
+
         text-decoration: none;
         text-transform: uppercase;
-        font-family: 'Big John';
-        font-size: 30pt;
     }
 
-    .pink {
-        color: #da465e;
+    .pink
+    {
         font-family: 'Big John';
-        display: block;
         font-size: 30pt;
+
+        display: block;
+
+        color: #da465e;
     }
-    .learn {
+    .learn
+    {
         font-size: 14pt;
+
         padding-bottom: 1em;
+
         border-bottom: 3px solid white;
     }
-    .price {
+    .price
+    {
         font-family: 'Big John';
-        font-size:16pt;
+        font-size: 16pt;
     }
-    .coral {
+    .coral
+    {
+        z-index: -1;
+
+        padding: 4em 0 3em 0;
+
         background-image: url(../img/12-Safari-Pattern-All-Sections.png);
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 4em 0 3em 0;
-        z-index: -1;
     }
 
-    #brown {
-        background-color: #a26e1f;
+    #brown
+    {
         padding: 2em 0;
+
+        background-color: #a26e1f;
     }
 
-    .bold {
+    .bold
+    {
         font-weight: bold;
     }
-    .contained {
+    .contained
+    {
         /*width: 90%;*/
         /*float: right;*/
         /*margin-left: 4em;*/
@@ -1086,85 +1373,108 @@ ul .slick-dots {
         padding-left: 3em;
     }
 
-    .dandy-man {
-        background-image: url(../img/5-Mobile-Dandy-Man.jpg);
+    .dandy-man
+    {
         position: absolute;
-        height: 100%;
-        width: 188px;
-        right: 0;
-        background-repeat: no-repeat;
         z-index: -1;
+        right: 0;
+
+        width: 188px;
+        height: 100%;
+
+        background-image: url(../img/5-Mobile-Dandy-Man.jpg);
+        background-repeat: no-repeat;
     }
-    .mobile-fashion {
-        background-image: url(../img/10-Mobile-Fashion.png); 
+    .mobile-fashion
+    {
         position: absolute;
+
         width: 321px;
         height: 386px;
 
-        background-repeat: no-repeat; 
+        background-image: url(../img/10-Mobile-Fashion.png);
+        background-repeat: no-repeat;
     }
-    .thread {
-        height: 23em;
+    .thread
+    {
         left: 4.5em;
+
+        height: 23em;
     }
-    .thread-end {
-        background-image: url(../img/13-Mobile-Thread.png); 
-        /*position: relative;*/
-        background-repeat: no-repeat; 
+    .thread-end
+    {
         width: 227px;
         height: 154px;
         /*top: 1.6em;
         right: -20%;*/
         margin: 0 auto;
+
+        background-image: url(../img/13-Mobile-Thread.png);
+        /*position: relative;*/
+        background-repeat: no-repeat;
     }
 
-    #transparent {
-        background-color: transparent;
+    #transparent
+    {
         height: 386px;
+
+        background-color: transparent;
     }
-    .photo {
-        height: auto;
-        width: 90%;
+    .photo
+    {
         position: relative;
         top: 2em;
+
+        width: 90%;
+        height: auto;
         /*top: -150px;*/
     }
-    .banner:last-of-type {
+    .banner:last-of-type
+    {
         margin-bottom: 1em;
     }
-    .carousel-image {
+    .carousel-image
+    {
         width: 100%;
         height: 200px;
     }
-    .carousel-description {
-        color: #a26e1f;
+    .carousel-description
+    {
         font-family: 'Roboto Slab Light';
+
+        color: #a26e1f;
     }
-    .featured {
-        color: #da465e;
-        text-align: center;
-        background-color:black;
+    .featured
+    {
         padding-bottom: 1em;
+
+        text-align: center;
+
+        color: #da465e;
+        background-color: black;
     }
-    .sidewalk-safari {
-        background-color: white;
+    .sidewalk-safari
+    {
         width: 100%;
         padding-top: 6em;
+
+        background-color: white;
     }
 
-    ul .slick-dots {
+    ul .slick-dots
+    {
         background-color: #da465e;
     }
-    .last {
+    .last
+    {
         margin-bottom: 4em;
     }
-.desktop-hide {
-    display: block;
+    .desktop-hide
+    {
+        display: block;
+    }
+    .desktop-show
+    {
+        display: none;
+    }
 }
-.desktop-show {
-    display: none;
-}
-}
-
-
-
