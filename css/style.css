@@ -376,6 +376,7 @@ body {
   font-size: 20pt;
   margin-top: 0;
   padding-top: 1em;
+  float: left;
   color: #a06e1f; }
 
 .info {
@@ -481,6 +482,9 @@ body {
   -ms-transform: scaleX(1);
   transform: scaleX(1); }
 
+.card .btn {
+  float: left; }
+
 .title-2 {
   font-family: 'Big John';
   font-size: 48pt;
@@ -488,15 +492,19 @@ body {
   text-align: left;
   letter-spacing: 3px; }
 
-.headline {
+.aliakim-headline {
   font-size: 16.5pt;
   font-weight: bold;
   /*line-height: 0;*/
   margin-bottom: 1.5em; }
 
-.title-3.headline {
+.title-3 {
+  text-align: center; }
+
+.title-3.aliakim-headline {
   font-size: 15pt;
-  line-height: 1em; }
+  line-height: 1em;
+  text-align: center; }
 
 .banner {
   /*height: 20em;*/
@@ -518,7 +526,9 @@ body {
 
 .carousel-description {
   font-family: 'Roboto Slab Light';
-  color: #a26e1f; }
+  color: #a26e1f;
+  float: right;
+  width: 50%; }
 
 .featured {
   text-align: center;
@@ -541,7 +551,7 @@ ul .slick-dots {
 
 .header-3 {
   font-family: 'Big John';
-  font-size: 40pt;
+  font-size: 35pt;
   text-transform: uppercase;
   color: #da465e; }
 
@@ -567,8 +577,15 @@ ul .slick-dots {
   font-size: 35pt;
   line-height: 0;
   /*padding-top:3em;*/
-  text-align: left;
+  text-align: center;
   letter-spacing: 3px; }
+
+.headline {
+  font-size: 14.5pt;
+  font-weight: bold;
+  /* line-height: 0; */
+  margin-bottom: 1em;
+  text-align: center; }
 
 .card {
   width: 100%;
@@ -670,7 +687,9 @@ ul .slick-dots {
 
   .carousel-description {
     font-family: 'Roboto Slab Light';
-    color: #a26e1f; }
+    color: #a26e1f;
+    width: 41%;
+    float: right; }
 
   .featured {
     text-align: center;
@@ -700,14 +719,6 @@ ul .slick-dots {
     font-family: 'Big John';
     font-size: 42pt;
     line-height: 0;
-    text-align: left;
-    letter-spacing: 3px; }
-
-  .title-3 {
-    font-family: 'Big John';
-    font-size: 35pt;
-    line-height: 0;
-    /*padding-top:3em;*/
     text-align: left;
     letter-spacing: 3px; }
 
@@ -745,6 +756,9 @@ ul .slick-dots {
     width: auto;
     padding: .5em; }
 
+  .card .btn {
+    float: left; }
+
   .subheader {
     font-weight: bolder;
     float: right;
@@ -760,15 +774,12 @@ ul .slick-dots {
     width: 50%;
     text-align: left; }
 
-  .headline {
+  .aliakim-headline {
     font-size: 14.5pt;
     font-weight: bold;
     /* line-height: 0; */
-    margin-bottom: 1em; }
-
-  .title-3.headline {
-    font-size: 15pt;
-    line-height: 1em; }
+    margin-bottom: 1em;
+    text-align: center; }
 
   .banner {
     /*height: 20em;*/
@@ -789,6 +800,7 @@ ul .slick-dots {
     font-family: 'Roboto Slab', sans-serif;
     font-size: 1.1em;
     font-size: 20pt;
+    float: left;
     margin-top: 0;
     padding-top: 1em;
     color: #a06e1f; }
@@ -815,7 +827,22 @@ ul .slick-dots {
   .pink {
     font-family: 'Big John';
     display: block;
-    color: #da465e; } }
+    color: #da465e; }
+
+  .title-3 {
+    font-family: 'Big John';
+    font-size: 35pt;
+    line-height: 0;
+    /*padding-top:3em;*/
+    text-align: center;
+    letter-spacing: 3px; }
+
+  .headline {
+    font-size: 14.5pt;
+    font-weight: bold;
+    /* line-height: 0; */
+    margin-bottom: 1em;
+    text-align: center; } }
 /* ==========================================================================
                                     MOBILE
 
@@ -854,7 +881,8 @@ ul .slick-dots {
     line-height: 0;
     /*padding-top:3em;*/
     text-align: left;
-    letter-spacing: 3px; }
+    letter-spacing: 3px;
+    position: inherit; }
 
   .info {
     font-size: 1em;
@@ -896,15 +924,14 @@ ul .slick-dots {
   #container-2 {
     text-align: left; }
 
-  .headline {
+  .aliakim-headline {
     font-size: 16.5pt;
     font-weight: bold;
     /*line-height: 0;*/
     margin-bottom: 1.5em; }
 
-  .title-3.headline {
-    font-size: 15pt;
-    line-height: 1em; }
+  .headline {
+    position: inherit; }
 
   .banner {
     /*height: 20em;*/
@@ -925,7 +952,7 @@ ul .slick-dots {
 
   .header-3 {
     font-family: 'Big John';
-    font-size: 40pt;
+    font-size: 35pt;
     text-transform: uppercase;
     color: #da465e; }
 
@@ -1014,6 +1041,7 @@ ul .slick-dots {
   .photo {
     position: relative;
     top: 2em;
+    z-index: 1;
     width: 90%;
     height: auto;
     /*top: -150px;*/ }
