@@ -373,7 +373,7 @@ body {
 .card__header {
   font-family: 'Roboto Slab', sans-serif;
   font-size: 1.1em;
-  font-size: 12pt;
+  font-size: 20pt;
   margin-top: 0;
   padding-top: 1em;
   color: #a06e1f; }
@@ -390,17 +390,18 @@ body {
   /*text-align: center;*/
   margin: 0 auto;
   padding-top: 1em;
-  padding-left: 4.5em;
+  padding-left: 5.5em;
+  padding-bottom: 2em;
   color: white; }
 
 .info2 {
   font-family: 'Roboto Slab Light';
-  font-size: 15pt;
+  font-size: 21pt;
   position: relative;
   top: 5em;
   width: 70%;
   padding-bottom: 7em;
-  padding-left: 4em; }
+  padding-left: 2em; }
 
 #brown {
   padding: 2em 0;
@@ -421,15 +422,24 @@ body {
   font-style: bold;
   /*text-align: center;*/
   text-transform: uppercase;
-  color: white; }
+  color: white;
+  float: right;
+  clear: both;
+  width: 39em; }
 
 .secondary-header {
   font-family: 'Big John';
   /*text-align: center;*/
-  font-size: 4em;
   margin-left: -2%;
   text-transform: uppercase;
-  color: #da465e; }
+  color: #da465e;
+  font-size: 80pt;
+  /*margin-left: .5em;*/
+  line-height: 1em;
+  position: absolute;
+  text-align: left;
+  width: 50%;
+  top: 9.7em; }
 
 .btn {
   font-size: 1.1em;
@@ -437,7 +447,7 @@ body {
   position: relative;
   z-index: 100;
   display: inline-block;
-  width: 100%;
+  width: auto;
   margin: 0 auto;
   margin-bottom: 3em;
   padding: 1em;
@@ -511,14 +521,16 @@ body {
   color: #a26e1f; }
 
 .featured {
-  padding-bottom: 1em;
   text-align: center;
   color: #da465e;
   background-color: black; }
 
 .sidewalk-safari {
-  width: 100%;
-  padding-top: 6em;
+  width: 34%;
+  padding-top: 0;
+  float: right;
+  position: relative;
+  top: -4em;
   background-color: white; }
 
 ul .slick-dots {
@@ -612,7 +624,6 @@ ul .slick-dots {
     left: 9.5em;
     height: 27em; }
 
-  /* WHAT A MESS*/
   #brown {
     padding: 2em 0;
     background-color: #a26e1f; }
@@ -662,7 +673,6 @@ ul .slick-dots {
     color: #a26e1f; }
 
   .featured {
-    padding-bottom: 1em;
     text-align: center;
     color: #da465e;
     background-color: black; }
@@ -774,6 +784,14 @@ ul .slick-dots {
   .card {
     width: 100%;
     background-color: white; }
+
+  .card__header {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 1.1em;
+    font-size: 20pt;
+    margin-top: 0;
+    padding-top: 1em;
+    color: #a06e1f; }
 
   .header-3 {
     font-family: 'Big John';
@@ -1014,7 +1032,6 @@ ul .slick-dots {
     color: #a26e1f; }
 
   .featured {
-    padding-bottom: 1em;
     text-align: center;
     color: #da465e;
     background-color: black; }
