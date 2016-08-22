@@ -1,0 +1,1056 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html {
+  font-size: 1em;
+  line-height: 1.4;
+  color: #222; }
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  margin: 1em 0;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid #ccc; }
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+  margin: .2em 0;
+  padding: .2em 0;
+  color: #000;
+  background: #ccc; }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide visually and from screen readers
+ */
+.hidden {
+  display: none !important; }
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+.visuallyhidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  position: static;
+  overflow: visible;
+  clip: auto;
+  width: auto;
+  height: auto;
+  margin: 0; }
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+.invisible {
+  visibility: hidden; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  /* 2 */
+  content: ' ';
+  /* 1 */ }
+
+.clearfix:after {
+  clear: both; }
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */ }
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  *:first-line {
+    color: #000 !important;
+                        /* Black prints faster:
+http://www.sanbeiji.com/archives/953 */
+    background: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^='#']:after,
+  a[href^='javascript:']:after {
+    content: ''; }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group; }
+
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+/*FONT FAMILY*/
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url("../fonts/RobotoSlab-Regular.ttf"); }
+@font-face {
+  font-family: 'Roboto Slab Light';
+  src: url("../fonts/RobotoSlab-Light.ttf"); }
+@font-face {
+  font-family: 'Big John';
+  src: url("../fonts/BIG JOHN.otf"); }
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+* {
+  font-family: 'Roboto Slab', sans-serif;
+  color: white;
+  /*border: 1px solid red;*/ }
+
+body {
+  background-color: black; }
+
+/* ==========================================================================
+   DESKTOP
+   ========================================================================== */
+.logo {
+  width: 100px;
+  height: 100px;
+  margin: 2em 45%;
+  background-image: url(../img/1-Mobile-Logo.png);
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.thread-container {
+  position: relative; }
+
+.photo {
+  width: 70%; }
+
+.thread {
+  position: absolute;
+  top: -11em;
+  left: 5.5em;
+  width: 50px;
+  height: 31em;
+  background-image: url(../img/2-Mobile-Thread.jpg);
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.flowers {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 88px;
+  height: 100%;
+  background-image: url(../img/3-Mobile-Flowers-Left.jpg);
+  background-repeat: no-repeat; }
+
+.flowers-right {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width: 103px;
+  height: 100%;
+  background-image: url(../img/4-Mobile-Flowers-Right.jpg);
+  background-repeat: no-repeat; }
+
+.flowers-3 {
+  position: absolute;
+  z-index: -1;
+  width: 42px;
+  height: 100%;
+  background-image: url(../img/6-Mobile-Flowers-Left.png);
+  background-repeat: no-repeat; }
+
+.flowers-4 {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 139px;
+  height: 100%;
+  background-image: url(../img/7-Mobile-Flowers-Right.png);
+  background-repeat: no-repeat; }
+
+.butterfly {
+  position: absolute;
+  z-index: -1;
+  right: 60%;
+  width: 41px;
+  height: 43px;
+  background-image: url(../img/8-Mobile-Butterfly-Left.png);
+  background-repeat: no-repeat; }
+
+.butterfly-2 {
+  position: absolute;
+  z-index: -1;
+  right: 40%;
+  width: 61px;
+  height: 64px;
+  background-image: url(../img/9-Mobile-Butterfly-Right.png);
+  background-repeat: no-repeat; }
+
+.dandy-man {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 188px;
+  height: 100%;
+  background-image: url(../img/5-Mobile-Dandy-Man.jpg);
+  background-repeat: no-repeat; }
+
+.mobile-fashion {
+  position: absolute;
+  width: 321px;
+  height: 386px;
+  background-image: url(../img/10-Mobile-Fashion.png);
+  background-repeat: no-repeat; }
+
+.thread-end {
+  width: 227px;
+  height: 154px;
+  /*top: 1.6em;
+  right: -20%;*/
+  margin: 0 auto;
+  background-image: url(../img/13-Mobile-Thread.png);
+  /*position: relative;*/
+  background-repeat: no-repeat; }
+
+.coral {
+  z-index: -1;
+  padding: 4em 0 3em 0;
+  background-image: url(../img/12-Safari-Pattern-All-Sections.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.site-container {
+  width: 100%;
+  margin: 0 auto; }
+
+.container {
+  padding-left: 10%;
+  width: 80%;
+  overflow: hidden; }
+
+.title-container {
+  width: 40%;
+  margin: 0 auto; }
+
+.title {
+  font-family: 'Big John';
+  font-size: 4em;
+  line-height: 1em;
+  /*top: -10em;*/
+  z-index: -1;
+  /*position: relative;*/
+  float: left;
+  max-width: 300px;
+  text-align: left;
+  color: white; }
+
+.card__header {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1.1em;
+  font-size: 20pt;
+  margin-top: 0;
+  padding-top: 1em;
+  color: #a06e1f; }
+
+.info {
+  font-family: 'Roboto Slab', sans-serif;
+  float: left;
+  /*position: relative;*/
+  /*top: -23em;*/
+  /*top: -26em;
+  left: 5em;*/
+  clear: both;
+  width: 12em;
+  /*text-align: center;*/
+  margin: 0 auto;
+  padding-top: 1em;
+  padding-left: 5.5em;
+  padding-bottom: 2em;
+  color: white; }
+
+.info2 {
+  font-family: 'Roboto Slab Light';
+  font-size: 21pt;
+  position: relative;
+  top: 5em;
+  width: 70%;
+  padding-bottom: 7em;
+  padding-left: 2em; }
+
+#brown {
+  padding: 2em 0;
+  background-color: #a26e1f; }
+
+.vid {
+  /* background-color: green;
+  float: right;
+  margin-right:5em;*/
+  top: 34em;
+  right: 0;
+  float: right;
+  width: auto;
+  height: 300px; }
+
+.subheader {
+  font-family: 'Roboto Slab', sans-serif;
+  font-style: bold;
+  /*text-align: center;*/
+  text-transform: uppercase;
+  color: white;
+  float: right;
+  clear: both;
+  width: 39em; }
+
+.secondary-header {
+  font-family: 'Big John';
+  /*text-align: center;*/
+  margin-left: -2%;
+  text-transform: uppercase;
+  color: #da465e;
+  font-size: 80pt;
+  /*margin-left: .5em;*/
+  line-height: 1em;
+  position: absolute;
+  text-align: left;
+  width: 50%;
+  top: 9.7em; }
+
+.btn {
+  font-size: 1.1em;
+  /*btn animation*/
+  position: relative;
+  z-index: 100;
+  display: inline-block;
+  width: auto;
+  margin: 0 auto;
+  margin-bottom: 3em;
+  padding: 1em;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+  text-align: center;
+  color: #a06e1f;
+  border: 5px solid #da465e;
+  background-color: transparent; }
+
+.btn:before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  -webkit-transition: -webkit-transform .5s;
+  transition: transform .5s;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  background: #da465e; }
+
+.btn:hover {
+  color: #fff; }
+
+.btn:hover:before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1); }
+
+.title-2 {
+  font-family: 'Big John';
+  font-size: 48pt;
+  line-height: 0;
+  text-align: left;
+  letter-spacing: 3px; }
+
+.headline {
+  font-size: 16.5pt;
+  font-weight: bold;
+  /*line-height: 0;*/
+  margin-bottom: 1.5em; }
+
+.title-3.headline {
+  font-size: 15pt;
+  line-height: 1em; }
+
+.banner {
+  /*height: 20em;*/
+  width: 100%;
+  /*float: left;*/
+  /*display: inline-block;*/
+  /*margin-bottom: -5px;*/ }
+
+#transparent {
+  height: 386px;
+  background-color: transparent; }
+
+.banner:last-of-type {
+  margin-bottom: 1em; }
+
+.carousel-image {
+  width: 80%;
+  height: 400px; }
+
+.carousel-description {
+  font-family: 'Roboto Slab Light';
+  color: #a26e1f; }
+
+.featured {
+  text-align: center;
+  color: #da465e;
+  background-color: black; }
+
+.sidewalk-safari {
+  width: 34%;
+  padding-top: 0;
+  float: right;
+  position: relative;
+  top: -4em;
+  background-color: white; }
+
+ul .slick-dots {
+  background-color: #da465e; }
+
+.last {
+  margin-bottom: 4em; }
+
+.header-3 {
+  font-family: 'Big John';
+  font-size: 40pt;
+  text-transform: uppercase;
+  color: #da465e; }
+
+.subheader-2 {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1.1em;
+  font-size: 12pt;
+  margin-top: 0;
+  padding-top: 0;
+  color: #a06e1f; }
+
+.inner-container {
+  padding-left: 10%; }
+
+#pink {
+  height: 14.5em;
+  width: 66%;
+  background-color: #da465e;
+  float: left; }
+
+.title-3 {
+  font-family: 'Big John';
+  font-size: 35pt;
+  line-height: 0;
+  /*padding-top:3em;*/
+  text-align: left;
+  letter-spacing: 3px; }
+
+.card {
+  width: 100%;
+  background-color: white; }
+
+.link {
+  font-family: 'Big John';
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.pink {
+  font-family: 'Big John';
+  display: block;
+  color: #da465e; }
+
+.learn {
+  font-size: 14pt;
+  padding-bottom: 1em;
+  border-bottom: 3px solid white; }
+
+.price {
+  font-family: 'Big John';
+  font-size: 16pt; }
+
+.desktop-hide {
+  display: none; }
+
+.desktop-show {
+  display: block; }
+
+.learn-container,
+.option-container {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 30%;
+  padding: 0 5%;
+  font-size: 26pt; }
+
+/* ==========================================================================
+   DESKTOP
+   ========================================================================== */
+/* ==========================================================================
+   TABLET
+   ========================================================================== */
+@media only screen and (min-width: 35em) and (max-width: 55em) {
+  /* Style adjustments for viewports that meet the condition */
+  .title {
+    font-size: 45pt;
+    padding-left: 12%;
+    letter-spacing: 2px; }
+
+  .thread {
+    left: 9.5em;
+    height: 27em; }
+
+  #brown {
+    padding: 2em 0;
+    background-color: #a26e1f; }
+
+  .bold {
+    font-weight: bold; }
+
+  .contained {
+    /*width: 90%;*/
+    /*float: right;*/
+    /*margin-left: 4em;*/
+    /*padding-bottom: 1em;*/
+    padding-left: 3em; }
+
+  .learn {
+    font-size: 14pt;
+    padding-bottom: 1em;
+    border-bottom: 3px solid white; }
+
+  .price {
+    font-family: 'Big John';
+    font-size: 16pt; }
+
+  #transparent {
+    height: 386px;
+    background-color: transparent; }
+
+  .photo {
+    position: relative;
+    top: 2em;
+    width: 90%;
+    height: auto;
+    /*top: -150px;*/ }
+
+  .dandy-man {
+    top: 51em; }
+
+  .banner:last-of-type {
+    margin-bottom: 1em; }
+
+  .carousel-image {
+    width: 100%;
+    height: 400px; }
+
+  .carousel-description {
+    font-family: 'Roboto Slab Light';
+    color: #a26e1f; }
+
+  .featured {
+    text-align: center;
+    color: #da465e;
+    background-color: black; }
+
+  .sidewalk-safari {
+    width: 34%;
+    padding-top: 0;
+    float: right;
+    position: relative;
+    top: -4em;
+    background-color: white; }
+
+  .title-container {
+    width: 65%; }
+
+  .title {
+    font-size: 45pt;
+    line-height: 1em;
+    width: 275px;
+    margin: 0 auto;
+    text-align: left;
+    letter-spacing: 2px; }
+
+  .title-2 {
+    font-family: 'Big John';
+    font-size: 42pt;
+    line-height: 0;
+    text-align: left;
+    letter-spacing: 3px; }
+
+  .title-3 {
+    font-family: 'Big John';
+    font-size: 35pt;
+    line-height: 0;
+    /*padding-top:3em;*/
+    text-align: left;
+    letter-spacing: 3px; }
+
+  .info {
+    font-size: 1em;
+    margin: 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 9.5em;
+    text-align: left; }
+
+  .info2 {
+    font-family: 'Roboto Slab Light';
+    font-size: 15pt;
+    position: relative;
+    top: 4em;
+    width: 70%;
+    padding-bottom: 7em;
+    padding-left: 3em; }
+
+  .vid {
+    top: 28em;
+    width: auto;
+    height: 200px;
+    margin-bottom: 1.5em; }
+
+  .secondary-header {
+    font-size: 65pt;
+    /*margin-left: .5em;*/
+    line-height: 1em;
+    position: absolute;
+    text-align: left; }
+
+  .btn {
+    width: auto;
+    padding: .5em; }
+
+  .subheader {
+    font-weight: bolder;
+    float: right;
+    width: 420px;
+    margin-bottom: 1.5em; }
+
+  .inner-container {
+    padding-left: 10%; }
+
+  #container-2 {
+    position: relative;
+    float: right;
+    width: 50%;
+    text-align: left; }
+
+  .headline {
+    font-size: 14.5pt;
+    font-weight: bold;
+    /* line-height: 0; */
+    margin-bottom: 1em; }
+
+  .title-3.headline {
+    font-size: 15pt;
+    line-height: 1em; }
+
+  .banner {
+    /*height: 20em;*/
+    width: 100%;
+    /*float: left;*/
+    /*display: inline-block;*/
+    /*margin-bottom: -5px;*/ }
+
+  #pink {
+    height: 14.5em;
+    background-color: #da465e; }
+
+  .card {
+    width: 100%;
+    background-color: white; }
+
+  .card__header {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 1.1em;
+    font-size: 20pt;
+    margin-top: 0;
+    padding-top: 1em;
+    color: #a06e1f; }
+
+  .header-3 {
+    font-family: 'Big John';
+    font-size: 22pt;
+    text-transform: uppercase;
+    color: #da465e; }
+
+  .subheader-2 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 1.1em;
+    font-size: 12pt;
+    margin-top: 0;
+    padding-top: 0;
+    color: #a06e1f; }
+
+  .link {
+    font-family: 'Big John';
+    text-decoration: none;
+    text-transform: uppercase; }
+
+  .pink {
+    font-family: 'Big John';
+    display: block;
+    color: #da465e; } }
+/* ==========================================================================
+                                    MOBILE
+
+
+
+
+
+
+ ========================================================================== */
+@media only screen and (max-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+  /*body {
+      background-color: black;
+      }*/
+  .title-container {
+    width: 65%; }
+
+  .title {
+    font-size: 35pt;
+    width: 275px;
+    margin: 0 auto;
+    text-align: left;
+    letter-spacing: 3px;
+    /*float: none;*/ }
+
+  .title-2 {
+    font-family: 'Big John';
+    font-size: 48pt;
+    line-height: 0;
+    text-align: left;
+    letter-spacing: 3px; }
+
+  .title-3 {
+    font-family: 'Big John';
+    font-size: 35pt;
+    line-height: 0;
+    /*padding-top:3em;*/
+    text-align: left;
+    letter-spacing: 3px; }
+
+  .info {
+    font-size: 1em;
+    margin: 0;
+    padding-bottom: 2em;
+    padding-left: 4.5em;
+    text-align: left; }
+
+  .info2 {
+    font-family: 'Roboto Slab Light';
+    font-size: 15pt;
+    position: relative;
+    top: 0;
+    width: 70%;
+    padding: 0; }
+
+  .vid {
+    position: initial;
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5em; }
+
+  .secondary-header {
+    font-size: 40pt;
+    /*margin-left: .5em;*/
+    line-height: 1em;
+    text-align: left; }
+
+  .subheader {
+    font-weight: bolder;
+    padding-left: 18%;
+    width: 50%;
+    margin-bottom: 1.5em; }
+
+  .inner-container {
+    padding-left: 10%; }
+
+  #container-2 {
+    text-align: left; }
+
+  .headline {
+    font-size: 16.5pt;
+    font-weight: bold;
+    /*line-height: 0;*/
+    margin-bottom: 1.5em; }
+
+  .title-3.headline {
+    font-size: 15pt;
+    line-height: 1em; }
+
+  .banner {
+    /*height: 20em;*/
+    width: 100%;
+    /*float: left;*/
+    /*display: inline-block;*/
+    /*margin-bottom: -5px;*/ }
+
+  #pink {
+    height: 11em;
+    width: 100%;
+    background-color: #da465e;
+    float: none; }
+
+  .card {
+    width: 100%;
+    background-color: white; }
+
+  .header-3 {
+    font-family: 'Big John';
+    font-size: 40pt;
+    text-transform: uppercase;
+    color: #da465e; }
+
+  .subheader-2 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 1.1em;
+    font-size: 20pt;
+    margin-top: 0;
+    padding-top: 0;
+    color: #a06e1f; }
+
+  .link {
+    font-family: 'Big John';
+    font-size: 30pt;
+    text-decoration: none;
+    text-transform: uppercase; }
+
+  .pink {
+    font-family: 'Big John';
+    font-size: 30pt;
+    color: #da465e; }
+
+  .learn {
+    font-size: 14pt;
+    padding-bottom: 1em;
+    border-bottom: 3px solid white; }
+
+  .price {
+    font-family: 'Big John';
+    font-size: 16pt; }
+
+  .coral {
+    z-index: -1;
+    padding: 4em 0 3em 0;
+    background-image: url(../img/12-Safari-Pattern-All-Sections.png);
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+  #brown {
+    padding: 2em 0;
+    background-color: #a26e1f; }
+
+  .bold {
+    font-weight: bold; }
+
+  .contained {
+    /*width: 90%;*/
+    /*float: right;*/
+    /*margin-left: 4em;*/
+    /*padding-bottom: 1em;*/
+    padding-left: 3em; }
+
+  .dandy-man {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 50em;
+    width: 188px;
+    height: 100%; }
+
+  .mobile-fashion {
+    position: absolute;
+    width: 321px;
+    height: 386px;
+    background-image: url(../img/10-Mobile-Fashion.png);
+    background-repeat: no-repeat; }
+
+  .thread {
+    left: 4.5em;
+    height: 23em; }
+
+  .thread-end {
+    width: 227px;
+    height: 154px;
+    /*top: 1.6em;
+    right: -20%;*/
+    margin: 0 auto;
+    background-image: url(../img/13-Mobile-Thread.png);
+    /*position: relative;*/
+    background-repeat: no-repeat; }
+
+  #transparent {
+    height: 386px;
+    background-color: transparent; }
+
+  .photo {
+    position: relative;
+    top: 2em;
+    width: 90%;
+    height: auto;
+    /*top: -150px;*/ }
+
+  .banner:last-of-type {
+    margin-bottom: 1em; }
+
+  .carousel-image {
+    width: 100%;
+    height: 200px; }
+
+  .carousel-description {
+    font-family: 'Roboto Slab Light';
+    float: right;
+    width: 100%;
+    color: #a26e1f; }
+
+  .featured {
+    text-align: center;
+    color: #da465e;
+    background-color: black; }
+
+  .sidewalk-safari {
+    width: 100%;
+    padding-top: 6em;
+    background-color: white; }
+
+  ul .slick-dots {
+    background-color: #da465e; }
+
+  .last {
+    margin-bottom: 4em; }
+
+  .desktop-hide {
+    display: block; }
+
+  .desktop-show {
+    display: none; } }
+
+/*# sourceMappingURL=style.css.map */

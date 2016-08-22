@@ -679,7 +679,7 @@ body
 {
     font-size: 16.5pt;
     font-weight: bold;
-    line-height: 0;
+    /*line-height: 0;*/
 
     margin-bottom: 1.5em;
 }
@@ -853,7 +853,7 @@ ul .slick-dots
 /* ==========================================================================
    TABLET
    ========================================================================== */
-@media only screen and (min-width: 35em) and (max-width: 45em)
+@media only screen and (min-width: 35em) and (max-width: 55em)
 {
     /* Style adjustments for viewports that meet the condition */
     .title
@@ -1067,7 +1067,7 @@ ul .slick-dots
     {
         font-size: 16.5pt;
         font-weight: bold;
-        line-height: 0;
+        /*line-height: 0;*/
 
         margin-bottom: 1.5em;
     }
@@ -1260,8 +1260,7 @@ ul .slick-dots
     {
         font-size: 16.5pt;
         font-weight: bold;
-        line-height: 0;
-
+        /*line-height: 0;*/
         margin-bottom: 1.5em;
     }
     .title-3.headline

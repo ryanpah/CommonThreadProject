@@ -10,6 +10,10 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+// COLORS
+
+$pink: #da465e;
+
 html
 {
     font-size: 1em;
@@ -495,10 +499,15 @@ body
     background-repeat: no-repeat;
     background-size: cover;
 }
-.container
+.site-container
 {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+}
+.container {
+    padding-left: 10%;
+    width: 80%;
+    overflow: hidden;
 }
 .title-container
 {
@@ -525,7 +534,17 @@ body
 }
 
 
+.card__header
+    {
+        font-family: 'Roboto Slab', sans-serif;
+        font-size: 1.1em;
+        font-size: 20pt;
+        
+        margin-top: 0;
+        padding-top: 1em;
 
+        color: #a06e1f;
+    }
 .info
 {
     font-family: 'Roboto Slab', sans-serif;
@@ -541,7 +560,8 @@ body
     /*text-align: center;*/
     margin: 0 auto;
     padding-top: 1em;
-    padding-left: 4.5em;
+    padding-left: 5.5em;    
+    padding-bottom: 2em;
 
     color: white;
 }
@@ -549,14 +569,14 @@ body
 .info2
 {
     font-family: 'Roboto Slab Light';
-    font-size: 15pt;
+    font-size: 21pt;
 
     position: relative;
     top: 5em;
 
     width: 70%;
     padding-bottom: 7em;
-    padding-left: 4em;
+    padding-left: 2em;
 }
 #brown
 {
@@ -565,22 +585,16 @@ body
     background-color: #a26e1f;
 }
 
-.outer
-{
-    position: relative;
-
-    height: 55em;
-}
 
 .vid
 {
     /* background-color: green;
     float: right;
     margin-right:5em;*/
-    position: absolute;
+    // position: absolute;
     top: 34em;
     right: 0;
-
+    float: right;
     width: auto;
     height: 300px;
 }
@@ -592,21 +606,34 @@ body
     /*text-align: center;*/
 
     text-transform: uppercase;
-
+    
     color: white;
+    float: right;
+    clear: both;
+    width: 39em;
 }
 
 .secondary-header
 {
     font-family: 'Big John';
     /*text-align: center;*/
-    font-size: 4em;
+    
 
     margin-left: -2%;
 
     text-transform: uppercase;
 
-    color: #da465e;
+    color: $pink;
+
+    font-size: 80pt;
+        /*margin-left: .5em;*/
+        line-height: 1em;
+
+    position: absolute;
+
+    text-align: left;
+    width: 50%;
+    top: 9.7em;
 }
 
 .btn
@@ -619,7 +646,7 @@ body
 
     display: inline-block;
 
-    width: 100%;
+    width: auto;
     margin: 0 auto;
     margin-bottom: 3em;
     padding: 1em;
@@ -629,7 +656,7 @@ body
     text-align: center;
 
     color: #a06e1f;
-    border: 5px solid #da465e;
+    border: 5px solid $pink;
     background-color: transparent;
 }
 
@@ -650,7 +677,7 @@ body
         -ms-transform: scaleX(0);
             transform: scaleX(0);
 
-    background: #da465e;
+    background: $pink;
 }
 
 .btn:hover
@@ -679,8 +706,7 @@ body
 {
     font-size: 16.5pt;
     font-weight: bold;
-    line-height: 0;
-
+    /*line-height: 0;*/
     margin-bottom: 1.5em;
 }
 .title-3.headline
@@ -700,7 +726,6 @@ body
 #transparent
 {
     height: 386px;
-
     background-color: transparent;
 }
 
@@ -721,24 +746,26 @@ body
 }
 .featured
 {
-    padding-bottom: 1em;
+    // padding-bottom: 1em;
 
     text-align: center;
 
-    color: #da465e;
+    color: $pink;
     background-color: black;
 }
 .sidewalk-safari
 {
-    width: 100%;
-    padding-top: 6em;
-
+    width: 34%;
+    padding-top: 0;
+    float: right;
+    position: relative;
+    top: -4em;
     background-color: white;
 }
 
 ul .slick-dots
 {
-    background-color: #da465e;
+    background-color: $pink;
 }
 .last
 {
@@ -752,14 +779,14 @@ ul .slick-dots
 
     text-transform: uppercase;
 
-    color: #da465e;
+    color: $pink;
 }
 .subheader-2
 {
     font-family: 'Roboto Slab', sans-serif;
     font-size: 1.1em;
-    font-size: 20pt;
-
+    font-size: 12pt;
+    
     margin-top: 0;
     padding-top: 0;
 
@@ -772,9 +799,10 @@ ul .slick-dots
 
 #pink
 {
-    height: 11em;
-
-    background-color: #da465e;
+    height: 14.5em;
+    width: 66%;
+    background-color: $pink;
+    float: left;
 }
 
 .title-3
@@ -798,7 +826,7 @@ ul .slick-dots
 .link
 {
     font-family: 'Big John';
-    font-size: 30pt;
+    // font-size: 30pt;
 
     text-decoration: none;
     text-transform: uppercase;
@@ -807,11 +835,11 @@ ul .slick-dots
 .pink
 {
     font-family: 'Big John';
-    font-size: 30pt;
+    // font-size: 30pt;
 
     display: block;
 
-    color: #da465e;
+    color: $pink;
 }
 .learn
 {
@@ -843,6 +871,7 @@ ul .slick-dots
     box-sizing: border-box;
     width: 30%;
     padding: 0 5%;
+    font-size: 26pt;
 }
 /* ==========================================================================
    DESKTOP
@@ -853,7 +882,7 @@ ul .slick-dots
 /* ==========================================================================
    TABLET
    ========================================================================== */
-@media only screen and (min-width: 35em) and (max-width: 45em)
+@media only screen and (min-width: 35em) and (max-width: 55em)
 {
     /* Style adjustments for viewports that meet the condition */
     .title
@@ -870,8 +899,6 @@ ul .slick-dots
 
         height: 27em;
     }
-
-    /* WHAT A MESS*/
 
     #brown
     {
@@ -919,9 +946,12 @@ ul .slick-dots
         position: relative;
         top: 2em;
 
-        width: 70%;
+        width: 90%;
         height: auto;
         /*top: -150px;*/
+    }
+    .dandy-man {
+        top: 51em;
     }
     .banner:last-of-type
     {
@@ -935,23 +965,24 @@ ul .slick-dots
     .carousel-description
     {
         font-family: 'Roboto Slab Light';
-
         color: #a26e1f;
     }
     .featured
     {
-        padding-bottom: 1em;
+        // padding-bottom: 1em;
 
         text-align: center;
 
-        color: #da465e;
+        color: $pink;
         background-color: black;
     }
     .sidewalk-safari
     {
-        width: 100%;
-        padding-top: 6em;
-
+        width: 34%;
+        padding-top: 0;
+        float: right;
+        position: relative;
+        top: -4em;
         background-color: white;
     }
     .title-container
@@ -973,7 +1004,7 @@ ul .slick-dots
     .title-2
     {
         font-family: 'Big John';
-        font-size: 48pt;
+        font-size: 42pt;
         line-height: 0;
 
         text-align: left;
@@ -1042,8 +1073,8 @@ ul .slick-dots
     .subheader
     {
         font-weight: bolder;
-
-        width: auto;
+        float: right;
+        width: 420px;
         margin-bottom: 1.5em;
     }
     .inner-container
@@ -1053,8 +1084,8 @@ ul .slick-dots
 
     #container-2
     {
-        position: absolute;
-        left: 21em;
+        position: relative;
+        // left: 21em;
 
         float: right;
 
@@ -1065,11 +1096,10 @@ ul .slick-dots
 
     .headline
     {
-        font-size: 16.5pt;
+        font-size: 14.5pt;
         font-weight: bold;
-        line-height: 0;
-
-        margin-bottom: 1.5em;
+        /* line-height: 0; */
+        margin-bottom: 1em;
     }
     .title-3.headline
     {
@@ -1087,9 +1117,9 @@ ul .slick-dots
 
     #pink
     {
-        height: 11em;
-
-        background-color: #da465e;
+        height: 14.5em;
+        
+        background-color: $pink;
     }
 
     .card
@@ -1098,20 +1128,32 @@ ul .slick-dots
 
         background-color: white;
     }
+
+    .card__header
+    {
+        font-family: 'Roboto Slab', sans-serif;
+        font-size: 1.1em;
+        font-size: 20pt;
+        
+        margin-top: 0;
+        padding-top: 1em;
+
+        color: #a06e1f;
+    }
     .header-3
     {
         font-family: 'Big John';
-        font-size: 40pt;
+        font-size: 22pt;
 
         text-transform: uppercase;
 
-        color: #da465e;
+        color: $pink;
     }
     .subheader-2
     {
         font-family: 'Roboto Slab', sans-serif;
         font-size: 1.1em;
-        font-size: 20pt;
+        font-size: 12pt;
 
         margin-top: 0;
         padding-top: 0;
@@ -1121,7 +1163,7 @@ ul .slick-dots
     .link
     {
         font-family: 'Big John';
-        font-size: 30pt;
+        // font-size: 30pt;
 
         text-decoration: none;
         text-transform: uppercase;
@@ -1130,20 +1172,13 @@ ul .slick-dots
     .pink
     {
         font-family: 'Big John';
-        font-size: 30pt;
+        // font-size: 30pt;
 
         display: block;
 
-        color: #da465e;
+        color: $pink;
     }
 
-
-    #pink
-    {
-        height: 11em;
-
-        background-color: #da465e;
-    }
 }
 /* ==========================================================================
                                     MOBILE
@@ -1217,15 +1252,15 @@ ul .slick-dots
         width: 70%;
         padding: 0;
     }
-    .outer
-    {
-        height: 40em;
-        /*position: inherit;*/
-    }
+    // .outer
+    // {
+    //     height: 40em;
+    //     /*position: inherit;*/
+    // }
     .vid
     {
         position: initial;
-
+        float: none;
         width: 100%;
         height: auto;
         margin-bottom: 1.5em;
@@ -1242,7 +1277,7 @@ ul .slick-dots
     .subheader
     {
         font-weight: bolder;
-
+        padding-left: 18%;
         width: 50%;
         margin-bottom: 1.5em;
     }
@@ -1260,8 +1295,7 @@ ul .slick-dots
     {
         font-size: 16.5pt;
         font-weight: bold;
-        line-height: 0;
-
+        /*line-height: 0;*/
         margin-bottom: 1.5em;
     }
     .title-3.headline
@@ -1281,8 +1315,9 @@ ul .slick-dots
     #pink
     {
         height: 11em;
-
-        background-color: #da465e;
+        width: 100%;
+        background-color: $pink;
+        float: none;
     }
 
     .card
@@ -1298,7 +1333,7 @@ ul .slick-dots
 
         text-transform: uppercase;
 
-        color: #da465e;
+        color: $pink;
     }
     .subheader-2
     {
@@ -1325,9 +1360,9 @@ ul .slick-dots
         font-family: 'Big John';
         font-size: 30pt;
 
-        display: block;
+        // display: inline-block;
 
-        color: #da465e;
+        color: $pink;
     }
     .learn
     {
@@ -1378,12 +1413,9 @@ ul .slick-dots
         position: absolute;
         z-index: -1;
         right: 0;
-
+        top: 50em;
         width: 188px;
         height: 100%;
-
-        background-image: url(../img/5-Mobile-Dandy-Man.jpg);
-        background-repeat: no-repeat;
     }
     .mobile-fashion
     {
@@ -1441,16 +1473,17 @@ ul .slick-dots
     .carousel-description
     {
         font-family: 'Roboto Slab Light';
-
+        float: right;
+        width: 100%;
         color: #a26e1f;
     }
     .featured
     {
-        padding-bottom: 1em;
+        // padding-bottom: 1em;
 
         text-align: center;
 
-        color: #da465e;
+        color: $pink;
         background-color: black;
     }
     .sidewalk-safari
@@ -1463,7 +1496,7 @@ ul .slick-dots
 
     ul .slick-dots
     {
-        background-color: #da465e;
+        background-color: $pink;
     }
     .last
     {
